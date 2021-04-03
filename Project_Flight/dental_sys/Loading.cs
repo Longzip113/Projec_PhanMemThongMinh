@@ -23,7 +23,7 @@ namespace dental_sys
             {
                 timer1.Stop();
 
-                Principal p = new Principal();
+                main p = new main();
                 p.Show();
                 this.Hide();
 
