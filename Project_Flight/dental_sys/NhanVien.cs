@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace dental_sys
 {
-    public partial class Patient : Form
+    public partial class NhanVien : Form
     {
-        public Patient()
+        public NhanVien()
         {
             InitializeComponent();
         }

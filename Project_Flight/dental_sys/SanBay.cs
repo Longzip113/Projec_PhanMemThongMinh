@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace dental_sys
 {
-    public partial class Dashboard : Form
+    public partial class SanBay : Form
     {
-        public Dashboard()
+        public SanBay()
         {
             InitializeComponent();
         }

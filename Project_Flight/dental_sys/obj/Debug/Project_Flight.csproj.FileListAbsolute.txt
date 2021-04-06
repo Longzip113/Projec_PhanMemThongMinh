@@ -43,11 +43,14 @@ C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\P
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfd.nlp
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkc.nlp
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkd.nlp
-C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Dashboard.resources
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Login.resources
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Loading.resources
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Messages.resources
-C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Patient.resources
-C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Principal.resources
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Properties.Resources.resources
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\Project_Flight.csproj.GenerateResource.Cache
+C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\Project_Flight.csprojResolveAssemblyReference.cache
+C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.DoanhThu.resources
+C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.NhanVien.resources
+C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Main.resources
+C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.SanBay.resources
+C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.ThemSanBay.resources
