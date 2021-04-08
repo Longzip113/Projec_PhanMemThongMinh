@@ -20,8 +20,8 @@ namespace dental_sys
         private void Principal_Load(object sender, EventArgs e)
         {
             guna2ShadowForm1.SetShadowForm(this);
-            label_val.Text = "Tổng quan";
-            guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
+            label_val.Text = "Doanh Thu";
+            guna2PictureBox_val.Image = Properties.Resources.income;
             container(new DoanhThu());
         }
 
@@ -43,15 +43,22 @@ namespace dental_sys
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
             label_val.Text = "Doanh thu";
-            guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
+            guna2PictureBox_val.Image = Properties.Resources.income;
             container(new DoanhThu());
         }
 
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
             label_val.Text = "Danh sách sân bay";
-            guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
+            guna2PictureBox_val.Image = Properties.Resources.flight__1_;
             container(new SanBay());
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Danh sách nhân viên";
+            guna2PictureBox_val.Image = Properties.Resources.group;
+            container(new NhanVien());
         }
 
     }

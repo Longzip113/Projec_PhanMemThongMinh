@@ -36,9 +36,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label_val = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CircleProgressBar1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,9 +73,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(77, 693);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(633, 71);
+            this.label5.Size = new System.Drawing.Size(595, 71);
             this.label5.TabIndex = 5;
-            this.label5.Text = "of your tooth health !";
+            this.label5.Text = "Đã chọn chúng tôi !";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
@@ -86,9 +86,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(77, 611);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(369, 71);
+            this.label4.Size = new System.Drawing.Size(384, 71);
             this.label4.TabIndex = 4;
-            this.label4.Text = "to take care";
+            this.label4.Text = "Cảm ơn bạn";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
@@ -99,9 +99,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(77, 540);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(243, 71);
+            this.label3.Size = new System.Drawing.Size(371, 71);
             this.label3.TabIndex = 3;
-            this.label3.Text = "its time";
+            this.label3.Text = "LTL Airlines";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label_val
@@ -112,7 +112,7 @@
             this.label_val.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(186)))), ((int)(((byte)(235)))));
             this.label_val.Location = new System.Drawing.Point(276, 935);
             this.label_val.Name = "label_val";
-            this.label_val.Size = new System.Drawing.Size(110, 144);
+            this.label_val.Size = new System.Drawing.Size(126, 144);
             this.label_val.TabIndex = 2;
             this.label_val.Text = "0";
             this.label_val.Click += new System.EventHandler(this.label_val_Click);
@@ -129,6 +129,11 @@
             this.label1.Text = "Loading ...";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 50;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -140,11 +145,6 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 50;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Loading
             // 

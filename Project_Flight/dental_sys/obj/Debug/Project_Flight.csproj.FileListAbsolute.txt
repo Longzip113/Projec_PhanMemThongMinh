@@ -54,3 +54,45 @@ C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\P
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Main.resources
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.SanBay.resources
 C:\Users\Long Nguyen\Desktop\DoAn - [PhanMenThongMinh]\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.ThemSanBay.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.exe.config
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.exe
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.pdb
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.exe
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.pdb
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\mscorlib.dll
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normidna.nlp
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfc.nlp
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfd.nlp
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkc.nlp
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkd.nlp
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\Project_Flight.csprojResolveAssemblyReference.cache
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.DoanhThu.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Login.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Loading.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.NhanVien.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Main.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Properties.Resources.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.SanBay.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.ThemSanBay.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\Project_Flight.csproj.GenerateResource.Cache
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.exe.config
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.exe
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.pdb
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.exe
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.pdb
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\mscorlib.dll
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normidna.nlp
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfc.nlp
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfd.nlp
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkc.nlp
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkd.nlp
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\Project_Flight.csprojResolveAssemblyReference.cache
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.DoanhThu.resources
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Login.resources
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Loading.resources
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.NhanVien.resources
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Main.resources
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Properties.Resources.resources
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.SanBay.resources
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.ThemSanBay.resources
+H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\Project_Flight.csproj.GenerateResource.Cache
