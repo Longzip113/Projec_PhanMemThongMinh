@@ -96,3 +96,7 @@ H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.P
 H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.SanBay.resources
 H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.ThemSanBay.resources
 H:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\Project_Flight.csproj.GenerateResource.Cache
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.TuyenBay.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.ChuyenBay.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.QuyDinhVe.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.BanVe.resources

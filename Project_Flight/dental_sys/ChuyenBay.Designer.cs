@@ -1,6 +1,6 @@
 ﻿namespace dental_sys
 {
-    partial class SanBay
+    partial class ChuyenBay
     {
         /// <summary>
         /// Required designer variable.
@@ -32,19 +32,21 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SanBay));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChuyenBay));
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colukm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -71,9 +73,11 @@
             this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 40;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column2,
             this.Column3,
             this.Column4,
+            this.colukm,
+            this.Column7,
+            this.Column1,
             this.Column5,
             this.Column6});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -86,7 +90,7 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(12, 69);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(12, 85);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -101,7 +105,7 @@
             this.guna2DataGridView1.RowTemplate.Height = 40;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridView1.Size = new System.Drawing.Size(987, 574);
-            this.guna2DataGridView1.TabIndex = 16;
+            this.guna2DataGridView1.TabIndex = 24;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -140,26 +144,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1011, 61);
-            this.guna2Panel1.TabIndex = 13;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(878, 3);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(100, 47);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "Thêm sân bay";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.guna2Panel1.TabIndex = 21;
             // 
             // guna2ComboBox1
             // 
@@ -177,14 +162,13 @@
             this.guna2ComboBox1.Items.AddRange(new object[] {
             "Last appointment"});
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(273, 12);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(296, 12);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(157, 36);
             this.guna2ComboBox1.StartIndex = 0;
             this.guna2ComboBox1.TabIndex = 3;
             this.guna2ComboBox1.TextOffset = new System.Drawing.Point(2, 0);
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -192,9 +176,9 @@
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F);
             this.label3.Location = new System.Drawing.Point(185, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 18);
+            this.label3.Size = new System.Drawing.Size(105, 18);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Lộc sân bay";
+            this.label3.Text = "Lộc chuyến bay";
             // 
             // label2
             // 
@@ -202,9 +186,9 @@
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F);
             this.label2.Location = new System.Drawing.Point(56, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 18);
+            this.label2.Size = new System.Drawing.Size(80, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Sân bay";
+            this.label2.Text = "Chuyến bay";
             // 
             // label1
             // 
@@ -230,11 +214,11 @@
             this.guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(790, 649);
+            this.guna2Button5.Location = new System.Drawing.Point(790, 665);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(84, 30);
-            this.guna2Button5.TabIndex = 15;
+            this.guna2Button5.TabIndex = 23;
             this.guna2Button5.Text = "Xóa";
             // 
             // guna2Button4
@@ -250,47 +234,76 @@
             this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(880, 649);
+            this.guna2Button4.Location = new System.Drawing.Point(880, 665);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(84, 30);
-            this.guna2Button4.TabIndex = 14;
+            this.guna2Button4.TabIndex = 22;
             this.guna2Button4.Text = "Sửa";
             // 
-            // Column2
+            // guna2Button1
             // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column2.FillWeight = 162.4365F;
-            this.Column2.HeaderText = "";
-            this.Column2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 70;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Gray;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Location = new System.Drawing.Point(878, 3);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(100, 47);
+            this.guna2Button1.TabIndex = 4;
+            this.guna2Button1.Text = "Thêm chuyến bay";
             // 
             // Column3
             // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Column3.FillWeight = 99.49239F;
-            this.Column3.HeaderText = "Tên sân bay";
+            this.Column3.HeaderText = "Sân bay đi";
             this.Column3.Name = "Column3";
+            this.Column3.Width = 110;
             // 
             // Column4
             // 
             this.Column4.FillWeight = 99.49239F;
-            this.Column4.HeaderText = "Mã code (Quốc tế)";
+            this.Column4.HeaderText = "Mã code quốc tế";
             this.Column4.Name = "Column4";
+            // 
+            // colukm
+            // 
+            this.colukm.HeaderText = "Ngày giờ";
+            this.colukm.Name = "colukm";
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column7.HeaderText = "";
+            this.Column7.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 199;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Thời gian bay";
+            this.Column1.Name = "Column1";
             // 
             // Column5
             // 
             this.Column5.FillWeight = 99.49239F;
-            this.Column5.HeaderText = "Thành phố";
+            this.Column5.HeaderText = "Sân bay đến";
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
             this.Column6.FillWeight = 99.49239F;
-            this.Column6.HeaderText = "Quốc gia";
+            this.Column6.HeaderText = "Mã code quốc tế";
             this.Column6.Name = "Column6";
             // 
-            // SanBay
+            // ChuyenBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -301,10 +314,9 @@
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "SanBay";
-            this.Text = "SanBay";
-            this.Load += new System.EventHandler(this.SanBay_Load);
+            this.Name = "ChuyenBay";
+            this.Text = "ChuyenBay";
+            this.Load += new System.EventHandler(this.ChuyenBay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -323,9 +335,11 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private System.Windows.Forms.DataGridViewImageColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colukm;
+        private System.Windows.Forms.DataGridViewImageColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }

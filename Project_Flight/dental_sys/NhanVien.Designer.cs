@@ -34,6 +34,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhanVien));
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,12 +47,6 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -127,51 +127,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column2.FillWeight = 162.4365F;
-            this.Column2.HeaderText = "";
-            this.Column2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 40;
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 99.49239F;
-            this.Column3.HeaderText = "Họ tên";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 99.49239F;
-            this.Column4.HeaderText = "Số điện thoại";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 99.49239F;
-            this.Column5.HeaderText = "CMND";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.FillWeight = 99.49239F;
-            this.Column6.HeaderText = "Tên tài khoản";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.FillWeight = 99.49239F;
-            this.Column7.HeaderText = "Số vé bán";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.FillWeight = 99.49239F;
-            this.Column8.HeaderText = "Tổng doanh thu";
-            this.Column8.Name = "Column8";
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.guna2Button1);
@@ -186,24 +141,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1011, 61);
             this.guna2Panel1.TabIndex = 4;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(879, 3);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(102, 47);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "Thêm nhân viên";
             // 
             // label2
             // 
@@ -266,6 +203,69 @@
             this.guna2Button4.TabIndex = 5;
             this.guna2Button4.Text = "Sửa";
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderColor = System.Drawing.Color.Gray;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Location = new System.Drawing.Point(879, 3);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(102, 47);
+            this.guna2Button1.TabIndex = 4;
+            this.guna2Button1.Text = "Thêm nhân viên";
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column2.FillWeight = 162.4365F;
+            this.Column2.HeaderText = "";
+            this.Column2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 70;
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 99.49239F;
+            this.Column3.HeaderText = "Họ tên";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 99.49239F;
+            this.Column4.HeaderText = "Số điện thoại";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.FillWeight = 99.49239F;
+            this.Column5.HeaderText = "CMND";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.FillWeight = 99.49239F;
+            this.Column6.HeaderText = "Tên tài khoản";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.FillWeight = 99.49239F;
+            this.Column7.HeaderText = "Số vé bán";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.FillWeight = 99.49239F;
+            this.Column8.HeaderText = "Tổng doanh thu";
+            this.Column8.Name = "Column8";
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,6 +290,12 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private System.Windows.Forms.DataGridViewImageColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
@@ -297,12 +303,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
 
     }
 }

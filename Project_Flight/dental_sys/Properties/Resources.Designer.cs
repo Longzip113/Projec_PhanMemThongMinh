@@ -63,9 +63,39 @@ namespace dental_sys.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dollar {
+            get {
+                object obj = ResourceManager.GetObject("dollar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flight__1_ {
             get {
                 object obj = ResourceManager.GetObject("flight__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flight__2_ {
+            get {
+                object obj = ResourceManager.GetObject("flight__2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flight__4_ {
+            get {
+                object obj = ResourceManager.GetObject("flight__4_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BanVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanVe.Designer.cs">
+      <DependentUpon>BanVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChuyenBay.Designer.cs">
+      <DependentUpon>ChuyenBay.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuyDinhVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuyDinhVe.Designer.cs">
+      <DependentUpon>QuyDinhVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="SanBay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +117,18 @@
     <Compile Include="ThemSanBay.Designer.cs">
       <DependentUpon>ThemSanBay.cs</DependentUpon>
     </Compile>
+    <Compile Include="TuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TuyenBay.Designer.cs">
+      <DependentUpon>TuyenBay.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BanVe.resx">
+      <DependentUpon>BanVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChuyenBay.resx">
+      <DependentUpon>ChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoanhThu.resx">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,11 +154,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuyDinhVe.resx">
+      <DependentUpon>QuyDinhVe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SanBay.resx">
       <DependentUpon>SanBay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemSanBay.resx">
       <DependentUpon>ThemSanBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TuyenBay.resx">
+      <DependentUpon>TuyenBay.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -163,6 +199,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\income.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flight %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flight %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

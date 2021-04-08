@@ -49,16 +49,44 @@ namespace dental_sys
 
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
-            label_val.Text = "Danh sách sân bay";
+            label_val.Text = "Sân bay";
             guna2PictureBox_val.Image = Properties.Resources.flight__1_;
             container(new SanBay());
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            label_val.Text = "Danh sách nhân viên";
+            label_val.Text = "Nhân viên";
             guna2PictureBox_val.Image = Properties.Resources.group;
             container(new NhanVien());
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Tuyến bay";
+            guna2PictureBox_val.Image = Properties.Resources.flight__2_;
+            container(new TuyenBay());
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Chuyến bay";
+            guna2PictureBox_val.Image = Properties.Resources.flight__4_;
+            container(new ChuyenBay());
+        }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Quy định giá";
+            guna2PictureBox_val.Image = Properties.Resources.dollar;
+            container(new QuyDinhVe());
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Bán vé";
+            guna2PictureBox_val.Image = Properties.Resources.dollar;
+            container(new BanVe());
         }
 
     }
