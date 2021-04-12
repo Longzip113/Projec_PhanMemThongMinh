@@ -37,6 +37,7 @@
             this.lblnoidi = new System.Windows.Forms.Label();
             this.lblgia = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -108,7 +109,7 @@
             this.lblgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblgia.Location = new System.Drawing.Point(810, 16);
             this.lblgia.Name = "lblgia";
-            this.lblgia.Size = new System.Drawing.Size(150, 16);
+            this.lblgia.Size = new System.Drawing.Size(146, 16);
             this.lblgia.TabIndex = 43;
             this.lblgia.Text = "605,000 VNĐ/ Khách";
             // 
@@ -134,10 +135,19 @@
             this.guna2Button1.TabIndex = 44;
             this.guna2Button1.Text = "Chọn";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(0, 72);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1008, 10);
+            this.panel1.TabIndex = 45;
+            // 
             // ListItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.lblgia);
             this.Controls.Add(this.lblnoidi);
@@ -147,7 +157,7 @@
             this.Controls.Add(this.lblGioDI);
             this.Controls.Add(this.image);
             this.Name = "ListItem";
-            this.Size = new System.Drawing.Size(970, 90);
+            this.Size = new System.Drawing.Size(1008, 82);
             ((System.ComponentModel.ISupportInitialize)(this.image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -165,5 +175,6 @@
         private System.Windows.Forms.Label lblnoidi;
         private System.Windows.Forms.Label lblgia;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

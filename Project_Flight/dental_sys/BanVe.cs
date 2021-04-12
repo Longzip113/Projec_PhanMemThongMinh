@@ -20,12 +20,27 @@ namespace dental_sys
 
         private void BanVe_Load(object sender, EventArgs e)
         {
-            
+            loadItem();
         }
 
         private void loadItem()
         {
-            Listitem [] name;
+            ListItem[] list = new ListItem[20];
+
+            for (int i = 0; i < list.Length; i++ )
+            {
+                list[i] = new ListItem();
+                list[i].Noiden = "Hồ Chí Minh (SGN)";
+                list[i].Noidi = "Hà Nội (HAN)";
+                if (flowLayoutPanel1.Controls.Count < 0)
+                {
+                    flowLayoutPanel1.Controls.Clear();
+                }
+                else
+                {
+                    flowLayoutPanel1.Controls.Add(list[i]);
+                }
+            }
         }
     }
 }

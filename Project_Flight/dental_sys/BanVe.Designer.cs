@@ -32,9 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.listItem1 = new dental_sys.UseControl.ListItem();
             this.guna2Panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -74,24 +72,12 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.listItem1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 67);
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 61);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(987, 606);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1011, 640);
             this.flowLayoutPanel1.TabIndex = 30;
-            // 
-            // listItem1
-            // 
-            this.listItem1.Gia = null;
-            this.listItem1.Gioden = null;
-            this.listItem1.Giodi = null;
-            this.listItem1.Img = null;
-            this.listItem1.Location = new System.Drawing.Point(3, 3);
-            this.listItem1.Name = "listItem1";
-            this.listItem1.Noiden = null;
-            this.listItem1.Noidi = null;
-            this.listItem1.Size = new System.Drawing.Size(970, 90);
-            this.listItem1.TabIndex = 0;
             // 
             // BanVe
             // 
@@ -107,7 +93,6 @@
             this.Load += new System.EventHandler(this.BanVe_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -118,6 +103,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private UseControl.ListItem listItem1;
     }
 }
