@@ -160,7 +160,7 @@
             this.guna2TextBox4.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox4.IconLeftSize = new System.Drawing.Size(15, 15);
             this.guna2TextBox4.Location = new System.Drawing.Point(143, 396);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "Quốc gia";
@@ -188,7 +188,7 @@
             this.guna2TextBox3.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox3.IconLeftSize = new System.Drawing.Size(15, 15);
             this.guna2TextBox3.Location = new System.Drawing.Point(143, 316);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "Thành phố";
@@ -216,7 +216,7 @@
             this.guna2TextBox2.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(15, 15);
             this.guna2TextBox2.Location = new System.Drawing.Point(143, 229);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "Mã code";
@@ -244,7 +244,7 @@
             this.guna2TextBox1.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox1.IconLeftSize = new System.Drawing.Size(15, 15);
             this.guna2TextBox1.Location = new System.Drawing.Point(143, 131);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Tên sân bay";
@@ -362,7 +362,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.guna2PictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ThemSanBay";
             this.Text = "ThemSanBay";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();

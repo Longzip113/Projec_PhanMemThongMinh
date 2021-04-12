@@ -65,7 +65,6 @@ G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfc.nlp
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfd.nlp
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkc.nlp
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkd.nlp
-G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\Project_Flight.csprojResolveAssemblyReference.cache
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.DoanhThu.resources
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Login.resources
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Loading.resources
@@ -100,3 +99,4 @@ G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.T
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.ChuyenBay.resources
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.QuyDinhVe.resources
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.BanVe.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.UseControl.ListItem.resources

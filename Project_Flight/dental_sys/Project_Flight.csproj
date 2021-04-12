@@ -123,6 +123,12 @@
     <Compile Include="TuyenBay.Designer.cs">
       <DependentUpon>TuyenBay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Listitem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Listitem.Designer.cs">
+      <DependentUpon>Listitem.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BanVe.resx">
       <DependentUpon>BanVe.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TuyenBay.resx">
       <DependentUpon>TuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listitem.resx">
+      <DependentUpon>Listitem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
