@@ -67,6 +67,12 @@
     <Compile Include="ChuyenBay.Designer.cs">
       <DependentUpon>ChuyenBay.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatVe.Designer.cs">
+      <DependentUpon>DatVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChuyenBay.resx">
       <DependentUpon>ChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatVe.resx">
+      <DependentUpon>DatVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoanhThu.resx">
       <DependentUpon>DoanhThu.cs</DependentUpon>

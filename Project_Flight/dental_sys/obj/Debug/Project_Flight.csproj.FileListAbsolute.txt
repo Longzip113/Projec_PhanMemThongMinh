@@ -100,3 +100,4 @@ G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.C
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.QuyDinhVe.resources
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.BanVe.resources
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.UseControl.ListItem.resources
+G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\Project_Flight.csprojResolveAssemblyReference.cache
