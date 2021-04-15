@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>dental_sys</RootNamespace>
     <AssemblyName>dental_sys</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,29 +56,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BanVe.cs">
+    <Compile Include="FormMain\BanVe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BanVe.Designer.cs">
+    <Compile Include="FormMain\BanVe.Designer.cs">
       <DependentUpon>BanVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChuyenBay.cs">
+    <Compile Include="FormMain\ChuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChuyenBay.Designer.cs">
+    <Compile Include="FormMain\ChuyenBay.Designer.cs">
       <DependentUpon>ChuyenBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="DatVe.cs">
+    <Compile Include="FormMain\DoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DatVe.Designer.cs">
+    <Compile Include="FormMain\DoanhThu.Designer.cs">
+      <DependentUpon>DoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\DatVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\DatVe.Designer.cs">
       <DependentUpon>DatVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoanhThu.cs">
+    <Compile Include="FormAdd\QuyDinhGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoanhThu.Designer.cs">
-      <DependentUpon>DoanhThu.cs</DependentUpon>
+    <Compile Include="FormAdd\QuyDinhGia.Designer.cs">
+      <DependentUpon>QuyDinhGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\ThemChuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\ThemChuyenBay.Designer.cs">
+      <DependentUpon>ThemChuyenBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\ThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\ThemNhanVien.Designer.cs">
+      <DependentUpon>ThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\ThemTuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\ThemTuyenBay.Designer.cs">
+      <DependentUpon>ThemTuyenBay.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -91,10 +116,10 @@
     <Compile Include="Loading.Designer.cs">
       <DependentUpon>Loading.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhanVien.cs">
+    <Compile Include="FormMain\NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhanVien.Designer.cs">
+    <Compile Include="FormMain\NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
@@ -105,47 +130,53 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuyDinhVe.cs">
+    <Compile Include="FormMain\QuyDinhVe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuyDinhVe.Designer.cs">
+    <Compile Include="FormMain\QuyDinhVe.Designer.cs">
       <DependentUpon>QuyDinhVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="SanBay.cs">
+    <Compile Include="FormMain\SanBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SanBay.Designer.cs">
+    <Compile Include="FormMain\SanBay.Designer.cs">
       <DependentUpon>SanBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThemSanBay.cs">
+    <Compile Include="FormAdd\ThemSanBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThemSanBay.Designer.cs">
+    <Compile Include="FormAdd\ThemSanBay.Designer.cs">
       <DependentUpon>ThemSanBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="TuyenBay.cs">
+    <Compile Include="FormMain\TuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TuyenBay.Designer.cs">
+    <Compile Include="FormMain\TuyenBay.Designer.cs">
       <DependentUpon>TuyenBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Listitem.cs">
+    <Compile Include="UserControls\Listitem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Listitem.Designer.cs">
+    <Compile Include="UserControls\Listitem.Designer.cs">
       <DependentUpon>Listitem.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BanVe.resx">
-      <DependentUpon>BanVe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChuyenBay.resx">
-      <DependentUpon>ChuyenBay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DatVe.resx">
+    <EmbeddedResource Include="FormAdd\DatVe.resx">
       <DependentUpon>DatVe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoanhThu.resx">
+    <EmbeddedResource Include="FormAdd\QuyDinhGia.resx">
+      <DependentUpon>QuyDinhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain\BanVe.resx">
+      <DependentUpon>BanVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain\ChuyenBay.resx">
+      <DependentUpon>ChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain\DoanhThu.resx">
       <DependentUpon>DoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\ThemTuyenBay.resx">
+      <DependentUpon>ThemTuyenBay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -153,7 +184,7 @@
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanVien.resx">
+    <EmbeddedResource Include="FormMain\NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
@@ -169,19 +200,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="QuyDinhVe.resx">
+    <EmbeddedResource Include="FormMain\QuyDinhVe.resx">
       <DependentUpon>QuyDinhVe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SanBay.resx">
+    <EmbeddedResource Include="FormMain\SanBay.resx">
       <DependentUpon>SanBay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThemSanBay.resx">
+    <EmbeddedResource Include="FormAdd\ThemSanBay.resx">
       <DependentUpon>ThemSanBay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TuyenBay.resx">
+    <EmbeddedResource Include="FormMain\TuyenBay.resx">
       <DependentUpon>TuyenBay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Listitem.resx">
+    <EmbeddedResource Include="UserControls\Listitem.resx">
       <DependentUpon>Listitem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -227,5 +258,6 @@
   <ItemGroup>
     <None Include="Resources\dollar.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

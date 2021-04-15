@@ -141,6 +141,7 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 46;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2TextBox4
             // 
@@ -253,6 +254,7 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(200, 35);
             this.guna2TextBox1.TabIndex = 42;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(5, 0);
+            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // panel6
             // 
@@ -365,6 +367,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ThemSanBay";
             this.Text = "ThemSanBay";
+            this.Load += new System.EventHandler(this.ThemSanBay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();

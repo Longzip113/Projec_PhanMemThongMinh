@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dental_sys.FormAdd;
 
 namespace dental_sys
 {
@@ -31,6 +32,12 @@ namespace dental_sys
             guna2DataGridView1.Rows[1].Cells[2].Value = Image.FromFile("photos\\go.png");
             guna2DataGridView1.Rows[1].Cells[3].Value = "Tân Sân Nhất";
             guna2DataGridView1.Rows[1].Cells[4].Value = "TSN";
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            FormThem a = new FormThem();
+            a.Show();
         }
     }
 }

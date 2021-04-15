@@ -1,6 +1,6 @@
-﻿namespace dental_sys
+﻿namespace dental_sys.FormAdd
 {
-    partial class DatVe
+    partial class ThemChuyenBay
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // DatVe
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 147);
-            this.Name = "DatVe";
-            this.Text = "DatVe";
-            this.ResumeLayout(false);
-
+            this.Text = "ThemChuyenBay";
         }
 
         #endregion

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace dental_sys
+namespace dental_sys.FormAdd
 {
-    public partial class DatVe : Form
+    public partial class ThemChuyenBay : Form
     {
-        public DatVe()
+        public ThemChuyenBay()
         {
             InitializeComponent();
         }

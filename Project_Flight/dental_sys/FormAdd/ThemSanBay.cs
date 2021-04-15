@@ -21,5 +21,20 @@ namespace dental_sys
         {
             this.Close();
         }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ThemSanBay_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
