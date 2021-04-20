@@ -166,6 +166,7 @@
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormThem";
             this.Text = "FormThem";

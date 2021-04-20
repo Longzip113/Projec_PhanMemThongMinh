@@ -154,6 +154,12 @@
     <Compile Include="FormMain\TuyenBay.Designer.cs">
       <DependentUpon>TuyenBay.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\itemdatve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\itemdatve.Designer.cs">
+      <DependentUpon>itemdatve.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Listitem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -165,6 +171,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdd\QuyDinhGia.resx">
       <DependentUpon>QuyDinhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\ThemChuyenBay.resx">
+      <DependentUpon>ThemChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\ThemNhanVien.resx">
+      <DependentUpon>ThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain\BanVe.resx">
       <DependentUpon>BanVe.cs</DependentUpon>
@@ -212,6 +224,9 @@
     <EmbeddedResource Include="FormMain\TuyenBay.resx">
       <DependentUpon>TuyenBay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\itemdatve.resx">
+      <DependentUpon>itemdatve.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Listitem.resx">
       <DependentUpon>Listitem.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +273,20 @@
   <ItemGroup>
     <None Include="Resources\dollar.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\logo_bamboo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_vnairlines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_vietjet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VietJet-Air-Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_vietnamairlines.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

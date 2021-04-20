@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dental_sys.UserControls;
 
 namespace dental_sys
 {
@@ -17,26 +18,37 @@ namespace dental_sys
             InitializeComponent();
         }
 
+        private void loadItem()
+        {
+            itemdatve[] list = new itemdatve[20];
+
+            for (int i = 0; i < list.Length; i++)
+            {
+                list[i] = new itemdatve();
+                list[i].Noiden = "Hồ Chí Minh (SGN)";
+                list[i].Noidi = "Hà Nội (HAN)";
+                if (i < 5)
+                {
+                    list[i].Img = Properties.Resources.logo_bamboo;
+                }
+                else if (i < 10)
+                {
+                    list[i].Img = Properties.Resources.logo_vietjet;
+                }
+                if (flowLayoutPanel1.Controls.Count < 0)
+                {
+                    flowLayoutPanel1.Controls.Clear();
+                }
+                else
+                {
+                    flowLayoutPanel1.Controls.Add(list[i]);
+                }
+            }
+        }
+
         private void QuyDinhVe_Load(object sender, EventArgs e)
         {
-            guna2DataGridView1.Rows.Add(2);
-            guna2DataGridView1.Rows[0].Cells[0].Value = "Tân Sân Nhất";
-            guna2DataGridView1.Rows[0].Cells[1].Value = "TSN";
-            guna2DataGridView1.Rows[0].Cells[2].Value = "6:35PM 18/04/2021";
-            guna2DataGridView1.Rows[0].Cells[3].Value = Image.FromFile("photos\\giave.png");
-            guna2DataGridView1.Rows[0].Cells[4].Value = "2:00";
-            guna2DataGridView1.Rows[0].Cells[5].Value = "Nội Bài";
-            guna2DataGridView1.Rows[0].Cells[6].Value = "SBN";
-            guna2DataGridView1.Rows[0].Cells[7].Value = "Quy định giá";
-
-            guna2DataGridView1.Rows[1].Cells[0].Value = "Nội Bài";
-            guna2DataGridView1.Rows[1].Cells[1].Value = "SBN";
-            guna2DataGridView1.Rows[1].Cells[2].Value = "8:35PM 24/04/2021";
-            guna2DataGridView1.Rows[1].Cells[3].Value = Image.FromFile("photos\\giave.png");
-            guna2DataGridView1.Rows[1].Cells[4].Value = "2:00";
-            guna2DataGridView1.Rows[1].Cells[5].Value = "Tân Sân Nhất";
-            guna2DataGridView1.Rows[1].Cells[6].Value = "TSN";
-            guna2DataGridView1.Rows[1].Cells[7].Value = "Quy định giá";
+            loadItem();
         }
     }
 }

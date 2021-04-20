@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dental_sys.FormAdd;
 
 namespace dental_sys.UseControl
 {
@@ -70,6 +71,12 @@ namespace dental_sys.UseControl
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            DatVe dv = new DatVe();
+            dv.Show();
         }
 
         

@@ -59,12 +59,6 @@ G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.e
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.pdb
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.exe
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.pdb
-G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\mscorlib.dll
-G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normidna.nlp
-G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfc.nlp
-G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfd.nlp
-G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkc.nlp
-G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\normnfkd.nlp
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.DoanhThu.resources
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Login.resources
 G:\Long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.Loading.resources
@@ -145,3 +139,9 @@ G:\long\Project_Flight\dental_sys\obj\Debug\dental_sys.TuyenBay.resources
 G:\long\Project_Flight\dental_sys\obj\Debug\dental_sys.UseControl.ListItem.resources
 G:\long\Project_Flight\dental_sys\obj\Debug\Project_Flight.csproj.GenerateResource.Cache
 G:\long\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.DatVe.resources
+G:\long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.DatVe.resources
+G:\long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.QuyDinhGia.resources
+G:\long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.ThemChuyenBay.resources
+G:\long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.ThemNhanVien.resources
+G:\long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormThem.resources
+G:\long\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.UserControls.itemdatve.resources

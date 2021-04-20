@@ -32,6 +32,14 @@ namespace dental_sys
                 list[i] = new ListItem();
                 list[i].Noiden = "Hồ Chí Minh (SGN)";
                 list[i].Noidi = "Hà Nội (HAN)";
+                if (i < 5)
+                {
+                    list[i].Img = Properties.Resources.logo_bamboo;
+                }
+                else if(i < 10)
+                {
+                    list[i].Img = Properties.Resources.logo_vietjet;
+                }
                 if (flowLayoutPanel1.Controls.Count < 0)
                 {
                     flowLayoutPanel1.Controls.Clear();

@@ -16,5 +16,15 @@ namespace dental_sys.FormAdd
         {
             InitializeComponent();
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
