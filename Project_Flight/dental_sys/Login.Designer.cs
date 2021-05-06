@@ -79,7 +79,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(601, 571);
             this.guna2Panel1.TabIndex = 0;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // guna2PictureBox4
             // 
@@ -92,7 +91,6 @@
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox4.TabIndex = 13;
             this.guna2PictureBox4.TabStop = false;
-            this.guna2PictureBox4.Click += new System.EventHandler(this.guna2PictureBox4_Click);
             // 
             // label6
             // 
@@ -104,7 +102,6 @@
             this.label6.Size = new System.Drawing.Size(88, 13);
             this.label6.TabIndex = 16;
             this.label6.Text = "+84 356 614 606";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // guna2Panel6
             // 
@@ -116,7 +113,6 @@
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
             this.guna2Panel6.Size = new System.Drawing.Size(13, 314);
             this.guna2Panel6.TabIndex = 15;
-            this.guna2Panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel6_Paint);
             // 
             // guna2Panel5
             // 
@@ -127,7 +123,6 @@
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(97, 10);
             this.guna2Panel5.TabIndex = 14;
-            this.guna2Panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel5_Paint);
             // 
             // guna2Panel4
             // 
@@ -138,7 +133,6 @@
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(97, 10);
             this.guna2Panel4.TabIndex = 13;
-            this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
             // 
             // label5
             // 
@@ -151,7 +145,6 @@
             this.label5.Size = new System.Drawing.Size(157, 40);
             this.label5.TabIndex = 13;
             this.label5.Text = "Vươn cao.";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -164,7 +157,6 @@
             this.label4.Size = new System.Drawing.Size(131, 41);
             this.label4.TabIndex = 12;
             this.label4.Text = "Tự hào,";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // guna2PictureBox3
             // 
@@ -177,7 +169,6 @@
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox3.TabIndex = 11;
             this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
             // guna2PictureBox1
             // 
@@ -189,7 +180,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2TextBox1
             // 
@@ -215,7 +205,6 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(268, 35);
             this.guna2TextBox1.TabIndex = 2;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(8, 0);
-            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // guna2TextBox2
             // 
@@ -241,7 +230,6 @@
             this.guna2TextBox2.Size = new System.Drawing.Size(268, 35);
             this.guna2TextBox2.TabIndex = 3;
             this.guna2TextBox2.TextOffset = new System.Drawing.Point(8, 0);
-            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // guna2Button1
             // 
@@ -283,7 +271,6 @@
             this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 1;
             this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2CustomCheckBox1.UncheckedState.Parent = this.guna2CustomCheckBox1;
-            this.guna2CustomCheckBox1.CheckedChanged += new System.EventHandler(this.guna2CustomCheckBox1_CheckedChanged);
             // 
             // label1
             // 
@@ -294,7 +281,6 @@
             this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Nhớ mật khẩu";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -306,7 +292,6 @@
             this.label2.Size = new System.Drawing.Size(149, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "Chào mừng bạn đến với";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -318,7 +303,6 @@
             this.label3.Size = new System.Drawing.Size(85, 16);
             this.label3.TabIndex = 9;
             this.label3.Text = "LTL - Airlines";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // guna2PictureBox2
             // 
@@ -330,7 +314,6 @@
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 10;
             this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
             // guna2Panel2
             // 
@@ -341,7 +324,6 @@
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(365, 10);
             this.guna2Panel2.TabIndex = 11;
-            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // guna2Panel3
             // 
@@ -352,7 +334,6 @@
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(365, 10);
             this.guna2Panel3.TabIndex = 12;
-            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
             // guna2DragControl1
             // 
