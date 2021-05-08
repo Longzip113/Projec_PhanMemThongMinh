@@ -39,9 +39,5 @@ namespace dental_sys.Model
             get { return matKhau; }
             set { matKhau = value; }
         }
-
-
-
-        
     }
 }

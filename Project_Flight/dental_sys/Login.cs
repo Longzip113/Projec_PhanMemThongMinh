@@ -12,11 +12,14 @@ using System.Net.NetworkInformation;
 using dental_sys.Model;
 using System.Reflection;
 using Newtonsoft.Json;
+using DLL_DAL;
 
 namespace dental_sys
 {
     public partial class Login : Form
     {
+        NhanVienDLL_DAL nhanviens = new NhanVienDLL_DAL();
+
         public Login()
         {
             InitializeComponent();
@@ -26,17 +29,26 @@ namespace dental_sys
         {
             guna2ShadowForm1.SetShadowForm(this);
         }
+        public void login(String userName, String passWord)
+        {
+            
+        }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("https://6092bf0a85ff51001721390f.mockapi.io");
-            HttpResponseMessage resp = client.GetAsync("/USER/1").Result;
-            UserModel user = resp.Content.ReadAsAsync<UserModel>().Result;
-            MessageBox.Show(user.HoTen);
+            Boolean check = nhanviens.login(guna2TextBox1.Text, guna2TextBox2.Text);
+            if(check)
+            {
+                Loading _load = new Loading();
+                _load.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Tai Khoan sai !!");
+            }
 
-            Loading _load = new Loading();
-            _load.Show();
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

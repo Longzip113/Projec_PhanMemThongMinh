@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DLL_DAL">
+      <HintPath>..\DLL_DAL\bin\Debug\DLL_DAL.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\Desktop\Guna\Guna.UI-Framework-Lib-master\Guna.UI_WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
