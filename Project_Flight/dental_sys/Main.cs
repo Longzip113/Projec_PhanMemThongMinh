@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DLL_DAL.Model;
 
 namespace dental_sys
 {
     public partial class Main : Form
     {
-        public Main()
+        UserModel model;
+
+        public Main(UserModel model)
         {
             InitializeComponent();
+            this.model = model;
         }
 
         private void Principal_Load(object sender, EventArgs e)
@@ -23,6 +27,7 @@ namespace dental_sys
             label_val.Text = "Doanh Thu";
             guna2PictureBox_val.Image = Properties.Resources.income;
             container(new DoanhThu());
+            //nameUser.Text = model.HoTen;
         }
 
         private void container(object _form)
@@ -89,5 +94,11 @@ namespace dental_sys
             container(new BanVe());
         }
 
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            Login fmLogin = new Login();
+            this.Hide();
+            fmLogin.Show();
+        }
     }
 }

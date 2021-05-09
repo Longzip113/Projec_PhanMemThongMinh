@@ -31,7 +31,7 @@ namespace DLL_DAL
 
         }
 
-        public Boolean login(String userName, String passWord)
+        public UserModel login(UserModel model)
         {
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("https://6092bf0a85ff51001721390f.mockapi.io");
@@ -40,12 +40,12 @@ namespace DLL_DAL
 
             foreach(UserModel item in user)
             {
-                if(item.TaiKhoan.Equals(userName) && item.MatKhau.Equals(passWord))
+                if (item.TaiKhoan.Equals(model.TaiKhoan) && item.MatKhau.Equals(model.MatKhau))
                 {
-                    return true;
+                    return item;
                 }
             }
-            return false;
+            return null;
         }
     }
 }

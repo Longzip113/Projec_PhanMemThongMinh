@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Http;
 using System.Net.NetworkInformation;
-using dental_sys.Model;
 using System.Reflection;
 using Newtonsoft.Json;
 using DLL_DAL;
+using DLL_DAL.Model;
 
 namespace dental_sys
 {
@@ -36,16 +36,20 @@ namespace dental_sys
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Boolean check = nhanviens.login(guna2TextBox1.Text, guna2TextBox2.Text);
-            if(check)
+            UserModel model = new UserModel();
+            model.TaiKhoan = guna2TextBox1.Text;
+            model.MatKhau = guna2TextBox2.Text;
+
+            model = nhanviens.login(model);
+            if(model != null)
             {
-                Loading _load = new Loading();
+                Loading _load = new Loading(model);
                 _load.Show();
-                this.Close();
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Tai Khoan sai !!");
+                notification.Text = "Tài khoản hoặc mật khẩu sai xin kiểm tra lại !";
             }
 
             

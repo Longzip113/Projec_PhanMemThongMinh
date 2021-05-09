@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dental_sys.FormAdd;
+using DLL_DAL.Model;
+using DLL_DAL;
 
 namespace dental_sys
 {
     public partial class TuyenBay : Form
     {
+        TuyenBayDLL_DAL tuyenBay = new TuyenBayDLL_DAL();
         public TuyenBay()
         {
             InitializeComponent();
@@ -20,18 +23,17 @@ namespace dental_sys
 
         private void TuyenBay_Load(object sender, EventArgs e)
         {
-            guna2DataGridView1.Rows.Add(2);
-            guna2DataGridView1.Rows[0].Cells[0].Value = "Tân Sân Nhất";
-            guna2DataGridView1.Rows[0].Cells[1].Value = "TSN";
-            guna2DataGridView1.Rows[0].Cells[2].Value = Image.FromFile("photos\\go.png");
-            guna2DataGridView1.Rows[0].Cells[3].Value = "Nội Bài";
-            guna2DataGridView1.Rows[0].Cells[4].Value = "SBN";
+            List<TuyenBayModel> tuyenBayModels = tuyenBay.GetTuyenBayModels();
 
-            guna2DataGridView1.Rows[1].Cells[0].Value = "Nội Bài";
-            guna2DataGridView1.Rows[1].Cells[1].Value = "SBN";
-            guna2DataGridView1.Rows[1].Cells[2].Value = Image.FromFile("photos\\go.png");
-            guna2DataGridView1.Rows[1].Cells[3].Value = "Tân Sân Nhất";
-            guna2DataGridView1.Rows[1].Cells[4].Value = "TSN";
+            guna2DataGridView1.Rows.Add(tuyenBayModels.Count);
+            for (int i = 0; i < tuyenBayModels.Count; i++)
+            {
+                guna2DataGridView1.Rows[i].Cells[0].Value = tuyenBayModels[i].TenSanBayDi;
+                guna2DataGridView1.Rows[i].Cells[1].Value = tuyenBayModels[i].ThanhPhoDi;
+                guna2DataGridView1.Rows[i].Cells[2].Value = Image.FromFile("photos\\go.png");
+                guna2DataGridView1.Rows[i].Cells[3].Value = tuyenBayModels[i].TenSanBayDen;
+                guna2DataGridView1.Rows[i].Cells[4].Value = tuyenBayModels[i].ThanhPhoDen;
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

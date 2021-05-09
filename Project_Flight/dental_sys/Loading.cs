@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DLL_DAL.Model;
 
 namespace dental_sys
 {
     public partial class Loading : Form
     {
-        public Loading()
+        UserModel model;
+        public Loading(UserModel model)
         {
             InitializeComponent();
+            this.model = model;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -23,7 +26,7 @@ namespace dental_sys
             {
                 timer1.Stop();
 
-                Main p = new Main();
+                Main p = new Main(model);
                 p.Show();
                 this.Hide();
 
