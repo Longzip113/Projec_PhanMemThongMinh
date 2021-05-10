@@ -28,6 +28,7 @@ C:\Users\Long Nguyen\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dent
 C:\Users\Long Nguyen\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.UserControls.itemdatve.resources
 C:\Users\Long Nguyen\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.UseControl.ListItem.resources
 C:\Users\Long Nguyen\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csproj.GenerateResource.Cache
-C:\Users\Long Nguyen\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csprojAssemblyReference.cache
 C:\Users\Long Nguyen\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 C:\Users\Long Nguyen\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Long Nguyen\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Long Nguyen\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csprojAssemblyReference.cache

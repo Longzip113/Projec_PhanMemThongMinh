@@ -68,6 +68,14 @@ namespace dental_sys.UseControl
             set { gia = value; lblgia.Text = value; }
         }
 
+        private string ngayDi;
+        [Category("Custom Props")]
+        public string NgayDi
+        {
+            get { return ngayDi; }
+            set { ngayDi = value; day.Text = value; }
+        }
+
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 

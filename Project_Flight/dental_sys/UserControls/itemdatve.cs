@@ -65,5 +65,13 @@ namespace dental_sys.UserControls
             get { return img; }
             set { img = value; image.Image = value; }
         }
+
+        private string ngayDi;
+        [Category("Custom Props")]
+        public string NgayDi
+        {
+            get { return ngayDi; }
+            set { ngayDi = value; day.Text = value; }
+        }
     }
 }

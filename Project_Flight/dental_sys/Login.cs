@@ -36,7 +36,7 @@ namespace dental_sys
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            UserModel model = new UserModel();
+            NhanVienModel model = new NhanVienModel();
             model.TaiKhoan = guna2TextBox1.Text;
             model.MatKhau = guna2TextBox2.Text;
 

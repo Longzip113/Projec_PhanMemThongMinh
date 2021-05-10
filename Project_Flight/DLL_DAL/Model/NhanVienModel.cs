@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DLL_DAL.Model
 {
-    public class UserModel
+    public class NhanVienModel
     {
         private  String Id;
         public String id
@@ -45,5 +45,13 @@ namespace DLL_DAL.Model
             get { return matKhau; }
             set { matKhau = value; }
         }
+
+        public string CMND { get => cMND; set => cMND = value; }
+        public int SoVeBan { get => soVeBan; set => soVeBan = value; }
+        public long TongDoanhThu { get => tongDoanhThu; set => tongDoanhThu = value; }
+
+        private String cMND;
+        private int soVeBan;
+        private long tongDoanhThu;
     }
 }

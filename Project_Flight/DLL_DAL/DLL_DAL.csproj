@@ -48,9 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="async.cs" />
+    <Compile Include="ChuyenBayDLL_DAL.cs" />
+    <Compile Include="Model\ChuyenBayModel.cs" />
     <Compile Include="Model\SanBayModel.cs" />
     <Compile Include="Model\TuyenBayModel.cs" />
-    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Model\NhanVienModel.cs" />
     <Compile Include="NhanVienDLL_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanBayDLL_DAL.cs" />

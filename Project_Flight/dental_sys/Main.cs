@@ -13,9 +13,9 @@ namespace dental_sys
 {
     public partial class Main : Form
     {
-        UserModel model;
+        NhanVienModel model;
 
-        public Main(UserModel model)
+        public Main(NhanVienModel model)
         {
             InitializeComponent();
             this.model = model;

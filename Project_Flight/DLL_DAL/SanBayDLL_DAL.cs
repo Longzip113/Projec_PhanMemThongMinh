@@ -34,6 +34,44 @@ namespace DLL_DAL
             return models;
         }
 
+        public void saveSanBayModel(SanBayModel model)
+        {
+            var sanBay = JsonConvert.SerializeObject(model);
+            var buffer = Encoding.UTF8.GetBytes(sanBay);
+            var byteContext = new ByteArrayContent(buffer);
+            byteContext.Headers.ContentType = new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json");
+            _client.PostAsync("/SanBay", byteContext);
+        }
+
+        public Boolean delete (long id)
+        {
+            try
+            {
+                _client.DeleteAsync($"/SanBay/{id}");
+                return true;
+            }catch
+            {
+                return false;
+            }
+        }
+
+        public Boolean update(SanBayModel model, long id)
+        {
+            try
+            {
+                var sanBay = JsonConvert.SerializeObject(model);
+                var buffer = Encoding.UTF8.GetBytes(sanBay);
+                var byteContext = new ByteArrayContent(buffer);
+                byteContext.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+                _client.PutAsync($"/SanBay/{id}", byteContext);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
 
     }
 }

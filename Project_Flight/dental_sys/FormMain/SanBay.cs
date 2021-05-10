@@ -15,15 +15,23 @@ namespace dental_sys
     public partial class SanBay : Form
     {
         SanBayDLL_DAL sanBay = new SanBayDLL_DAL();
+        List<SanBayModel> listSB;
+        SanBayModel sanBayModel;
+        long id;
         public SanBay()
         {
             InitializeComponent();
+            load_Form();
         }
 
-
-        private void SanBay_Load(object sender, EventArgs e)
+        private void load_Form()
         {
-            List<SanBayModel> listSB = sanBay.GetSanBayModels();
+            SanBay_Load();
+            guna2Button5.Enabled = false;
+        }
+        private void SanBay_Load()
+        {
+            listSB = sanBay.GetSanBayModels();
 
             guna2DataGridView1.Rows.Add(listSB.Count);
             for(int i = 0; i < listSB.Count; i++)
@@ -34,30 +42,54 @@ namespace dental_sys
                 guna2DataGridView1.Rows[i].Cells[3].Value = listSB[i].TenThanhPho;
                 guna2DataGridView1.Rows[i].Cells[4].Value = listSB[i].QuocGia;
             }
-
-            
-            //guna2DataGridView1.Rows[0].Cells[0].Value = Image.FromFile("photos\\flight.png");
-            //guna2DataGridView1.Rows[0].Cells[1].Value = "Tân Sân Nhất";
-            //guna2DataGridView1.Rows[0].Cells[2].Value = "TSN";
-            //guna2DataGridView1.Rows[0].Cells[3].Value = "TP.HCM";
-            //guna2DataGridView1.Rows[0].Cells[4].Value = "Việt Nam";
-
-            //guna2DataGridView1.Rows[1].Cells[0].Value = Image.FromFile("photos\\flight.png");
-            //guna2DataGridView1.Rows[1].Cells[1].Value = "Nôi Bài";
-            //guna2DataGridView1.Rows[1].Cells[2].Value = "SNB";
-            //guna2DataGridView1.Rows[1].Cells[3].Value = "Hà Nội";
-            //guna2DataGridView1.Rows[1].Cells[4].Value = "Việt Nam";
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            ThemSanBay themsanbay = new ThemSanBay();
+            ThemSanBay themsanbay = new ThemSanBay(null);
             themsanbay.Show();
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        private void findSanBayByCode(string code)
+        {
+            foreach (SanBayModel item in listSB)
+            {
+                if (code.Equals(item.Code))
+                {
+                    id = item.id;
+                    sanBayModel = item;
+                    return;
+                }
+            }
+        }
+
+        private void guna2DataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            guna2Button5.Enabled = true;
+            if (guna2DataGridView1.SelectedRows.Count > 0)
+            {
+                findSanBayByCode(guna2DataGridView1.SelectedRows[0].Cells[2].Value.ToString());
+            }
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            sanBay.delete(id);
+            guna2DataGridView1.Rows.Clear();
+            load_Form();
+            MessageBox.Show("Delete success");
+        }
+
+       
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            ThemSanBay themsanbay = new ThemSanBay(sanBayModel);
+            themsanbay.Show();
         }
     }
 }

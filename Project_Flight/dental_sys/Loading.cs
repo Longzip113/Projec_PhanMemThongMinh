@@ -13,8 +13,8 @@ namespace dental_sys
 {
     public partial class Loading : Form
     {
-        UserModel model;
-        public Loading(UserModel model)
+        NhanVienModel model;
+        public Loading(NhanVienModel model)
         {
             InitializeComponent();
             this.model = model;

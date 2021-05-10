@@ -22,23 +22,20 @@ namespace DLL_DAL
             _client.BaseAddress = new  Uri("https://6092bf0a85ff51001721390f.mockapi.io");
         }
 
-        public async Task<List<UserModel>> GetUserModels()
+        public List<NhanVienModel> GetNhanVienModels()
         {
-            _response = await _client.GetAsync("/USER");
-            var json = await _response.Content.ReadAsStringAsync();
-            List<UserModel> user = JsonConvert.DeserializeObject<List<UserModel>>(json);
-            return user;
+            _response = _client.GetAsync("/USER").Result;
+            var nhanViens = _response.Content.ReadAsAsync<IEnumerable<NhanVienModel>>().Result;
+            return (List<NhanVienModel>)nhanViens;
 
         }
 
-        public UserModel login(UserModel model)
+        public NhanVienModel login(NhanVienModel model)
         {
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("https://6092bf0a85ff51001721390f.mockapi.io");
-            HttpResponseMessage resp = client.GetAsync("/USER").Result;
-            var user = resp.Content.ReadAsAsync<IEnumerable<UserModel>>().Result;
+            _response = _client.GetAsync("/USER").Result;
+            var user = _response.Content.ReadAsAsync<IEnumerable<NhanVienModel>>().Result;
 
-            foreach(UserModel item in user)
+            foreach(NhanVienModel item in user)
             {
                 if (item.TaiKhoan.Equals(model.TaiKhoan) && item.MatKhau.Equals(model.MatKhau))
                 {

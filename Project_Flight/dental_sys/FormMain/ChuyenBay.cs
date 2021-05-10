@@ -8,34 +8,47 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dental_sys.FormAdd;
+using DLL_DAL.Model;
+using DLL_DAL;
+using System.Globalization;
 
 namespace dental_sys
 {
     public partial class ChuyenBay : Form
     {
+        ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL();
+
         public ChuyenBay()
         {
             InitializeComponent();
         }
 
+        private String converIntegerToData(int date)
+        {
+            DateTime dt;
+            if (DateTime.TryParseExact(date.ToString(), "yyyyMMddhhmm",
+                                      CultureInfo.InvariantCulture,
+                                      DateTimeStyles.None, out dt))
+            {
+                Console.WriteLine(dt);
+            }
+            return dt.ToString("yyyy/MM/dd - hh:mm", CultureInfo.InvariantCulture);
+        }
+
         private void ChuyenBay_Load(object sender, EventArgs e)
         {
-            guna2DataGridView1.Rows.Add(2);
-            guna2DataGridView1.Rows[0].Cells[0].Value = "Tân Sân Nhất";
-            guna2DataGridView1.Rows[0].Cells[1].Value = "TSN";
-            guna2DataGridView1.Rows[0].Cells[2].Value = "6:35PM 18/04/2021";
-            guna2DataGridView1.Rows[0].Cells[3].Value = Image.FromFile("photos\\direct-flight.png");
-            guna2DataGridView1.Rows[0].Cells[4].Value = "2:00";
-            guna2DataGridView1.Rows[0].Cells[5].Value = "Nội Bài";
-            guna2DataGridView1.Rows[0].Cells[6].Value = "SBN";
-
-            guna2DataGridView1.Rows[1].Cells[0].Value = "Nội Bài";
-            guna2DataGridView1.Rows[1].Cells[1].Value = "SBN";
-            guna2DataGridView1.Rows[1].Cells[2].Value = "8:35PM 24/04/2021";
-            guna2DataGridView1.Rows[1].Cells[3].Value = Image.FromFile("photos\\direct-flight.png");
-            guna2DataGridView1.Rows[1].Cells[4].Value = "2:00";
-            guna2DataGridView1.Rows[1].Cells[5].Value = "Tân Sân Nhất";
-            guna2DataGridView1.Rows[1].Cells[6].Value = "TSN";
+            List<ChuyenBayModel> listCB = chuyenBay.GetChuyenBayModels();
+            guna2DataGridView1.Rows.Add(listCB.Count);
+            for (int i = 0; i < listCB.Count; i++)
+            {
+                guna2DataGridView1.Rows[i].Cells[0].Value = listCB[i].TenSanBayDi;
+                guna2DataGridView1.Rows[i].Cells[1].Value = listCB[i].ThanhPhoDi;
+                guna2DataGridView1.Rows[i].Cells[2].Value = converIntegerToData(listCB[i].NgayGio);
+                guna2DataGridView1.Rows[i].Cells[3].Value = Image.FromFile("photos\\direct-flight.png");
+                guna2DataGridView1.Rows[i].Cells[4].Value = listCB[i].ThoiGianBay;
+                guna2DataGridView1.Rows[i].Cells[5].Value = listCB[i].TenSanBayDen;
+                guna2DataGridView1.Rows[i].Cells[6].Value = listCB[i].ThanhPhoDen;
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
