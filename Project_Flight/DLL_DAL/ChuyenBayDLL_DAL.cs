@@ -10,22 +10,10 @@ using DLL_DAL.Model;
 
 namespace DLL_DAL
 {
-    public class ChuyenBayDLL_DAL
+    public class ChuyenBayDLL_DAL:AbstractDLL_DAL<ChuyenBayModel>
     {
-        public HttpClient _client;
-        public HttpResponseMessage _response;
-
-        public ChuyenBayDLL_DAL()
+        public ChuyenBayDLL_DAL(String url):base(url)
         {
-            _client = new HttpClient();
-            _client.BaseAddress = new Uri("https://6092bf0a85ff51001721390f.mockapi.io");
-        }
-
-        public List<ChuyenBayModel> GetChuyenBayModels()
-        {
-            _response = _client.GetAsync("/ChuyenBay").Result;
-            var chuyenBays = _response.Content.ReadAsAsync<IEnumerable<ChuyenBayModel>>().Result;
-            return (List<ChuyenBayModel>)chuyenBays;
         }
     }
 }

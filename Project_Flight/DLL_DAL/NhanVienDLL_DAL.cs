@@ -11,25 +11,13 @@ using System.Threading.Tasks;
 
 namespace DLL_DAL
 {
-    public class NhanVienDLL_DAL
+    public class NhanVienDLL_DAL:AbstractDLL_DAL<NhanVienModel>
     {
-        public HttpClient _client;
-        public HttpResponseMessage _response;
-
-        public NhanVienDLL_DAL()
+        public NhanVienDLL_DAL(String url):base(url)
         {
-            _client = new HttpClient();
-            _client.BaseAddress = new  Uri("https://6092bf0a85ff51001721390f.mockapi.io");
         }
 
-        public List<NhanVienModel> GetNhanVienModels()
-        {
-            _response = _client.GetAsync("/USER").Result;
-            var nhanViens = _response.Content.ReadAsAsync<IEnumerable<NhanVienModel>>().Result;
-            return (List<NhanVienModel>)nhanViens;
-
-        }
-
+        // chuc nang dang nhap
         public NhanVienModel login(NhanVienModel model)
         {
             _response = _client.GetAsync("/USER").Result;

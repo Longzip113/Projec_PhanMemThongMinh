@@ -15,24 +15,28 @@ namespace dental_sys
 {
     public partial class TuyenBay : Form
     {
-        TuyenBayDLL_DAL tuyenBay = new TuyenBayDLL_DAL();
+        TuyenBayDLL_DAL tuyenBay = new TuyenBayDLL_DAL("TuyenBay");
+        List<TuyenBayModel> listTB;
+        long id;
         public TuyenBay()
         {
             InitializeComponent();
+            Load_Form();
         }
 
-        private void TuyenBay_Load(object sender, EventArgs e)
+        private void Load_Form()
         {
-            List<TuyenBayModel> tuyenBayModels = tuyenBay.GetTuyenBayModels();
+            guna2Button5.Enabled = false;
+            listTB = tuyenBay.GetModels();
 
-            guna2DataGridView1.Rows.Add(tuyenBayModels.Count);
-            for (int i = 0; i < tuyenBayModels.Count; i++)
+            guna2DataGridView1.Rows.Add(listTB.Count);
+            for (int i = 0; i < listTB.Count; i++)
             {
-                guna2DataGridView1.Rows[i].Cells[0].Value = tuyenBayModels[i].TenSanBayDi;
-                guna2DataGridView1.Rows[i].Cells[1].Value = tuyenBayModels[i].ThanhPhoDi;
+                guna2DataGridView1.Rows[i].Cells[0].Value = listTB[i].TenSanBayDi;
+                guna2DataGridView1.Rows[i].Cells[1].Value = listTB[i].ThanhPhoDi;
                 guna2DataGridView1.Rows[i].Cells[2].Value = Image.FromFile("photos\\go.png");
-                guna2DataGridView1.Rows[i].Cells[3].Value = tuyenBayModels[i].TenSanBayDen;
-                guna2DataGridView1.Rows[i].Cells[4].Value = tuyenBayModels[i].ThanhPhoDen;
+                guna2DataGridView1.Rows[i].Cells[3].Value = listTB[i].TenSanBayDen;
+                guna2DataGridView1.Rows[i].Cells[4].Value = listTB[i].ThanhPhoDen;
             }
         }
 
@@ -40,6 +44,35 @@ namespace dental_sys
         {
             FormThem a = new FormThem();
             a.Show();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            tuyenBay.delete(id);
+            guna2DataGridView1.Rows.Clear();
+            Load_Form();
+            MessageBox.Show("Delete success");
+        }
+
+        private void findTuyenBayBySanBay(string sanBaydi, string sanBayDen)
+        {
+            foreach (TuyenBayModel item in listTB)
+            {
+                if (item.TenSanBayDi.Equals(sanBaydi) && item.TenSanBayDen.Equals(sanBayDen))
+                {
+                    id = item.id;
+                    return;
+                }
+            }
+        }
+
+        private void guna2DataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            guna2Button5.Enabled = true;
+            if (guna2DataGridView1.SelectedRows.Count > 0)
+            {
+                findTuyenBayBySanBay(guna2DataGridView1.SelectedRows[0].Cells[0].Value.ToString(), guna2DataGridView1.SelectedRows[0].Cells[3].Value.ToString());
+            }
         }
     }
 }

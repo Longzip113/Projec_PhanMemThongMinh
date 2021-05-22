@@ -15,7 +15,7 @@ namespace dental_sys
     
     public partial class ThemSanBay : Form
     {
-        SanBayDLL_DAL sanBay = new SanBayDLL_DAL();
+        SanBayDLL_DAL sanBay = new SanBayDLL_DAL("SanBay");
         SanBayModel model;
         public ThemSanBay(SanBayModel model)
         {
@@ -66,7 +66,7 @@ namespace dental_sys
             sanBayModel.TinhTrang = true;
             if (guna2Button2.Text.Equals("Thêm"))
             {
-                sanBay.saveSanBayModel(sanBayModel);
+                sanBay.saveModel(sanBayModel);
             }
             else
             {

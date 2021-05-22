@@ -16,7 +16,7 @@ namespace dental_sys
 {
     public partial class QuyDinhVe : Form
     {
-        ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL();
+        ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL("ChuyenBay");
         public QuyDinhVe()
         {
             InitializeComponent();
@@ -48,7 +48,7 @@ namespace dental_sys
 
         private void loadItem()
         {
-            List<ChuyenBayModel> chuyenBayModels = chuyenBay.GetChuyenBayModels();
+            List<ChuyenBayModel> chuyenBayModels = chuyenBay.GetModels();
 
             itemdatve[] list = new itemdatve[chuyenBayModels.Count];
 

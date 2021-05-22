@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractDLL_DAL.cs" />
     <Compile Include="async.cs" />
     <Compile Include="ChuyenBayDLL_DAL.cs" />
     <Compile Include="Model\ChuyenBayModel.cs" />

@@ -14,7 +14,7 @@ namespace dental_sys
 {
     public partial class SanBay : Form
     {
-        SanBayDLL_DAL sanBay = new SanBayDLL_DAL();
+        SanBayDLL_DAL sanBay = new SanBayDLL_DAL("SanBay");
         List<SanBayModel> listSB;
         SanBayModel sanBayModel;
         long id;
@@ -31,7 +31,7 @@ namespace dental_sys
         }
         private void SanBay_Load()
         {
-            listSB = sanBay.GetSanBayModels();
+            listSB = sanBay.GetModels();
 
             guna2DataGridView1.Rows.Add(listSB.Count);
             for(int i = 0; i < listSB.Count; i++)

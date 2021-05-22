@@ -16,7 +16,7 @@ namespace dental_sys
 {
     public partial class ChuyenBay : Form
     {
-        ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL();
+        ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL("ChuyenBay");
 
         public ChuyenBay()
         {
@@ -37,7 +37,7 @@ namespace dental_sys
 
         private void ChuyenBay_Load(object sender, EventArgs e)
         {
-            List<ChuyenBayModel> listCB = chuyenBay.GetChuyenBayModels();
+            List<ChuyenBayModel> listCB = chuyenBay.GetModels();
             guna2DataGridView1.Rows.Add(listCB.Count);
             for (int i = 0; i < listCB.Count; i++)
             {

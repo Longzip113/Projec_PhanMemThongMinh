@@ -11,27 +11,9 @@ using Newtonsoft.Json;
 
 namespace DLL_DAL
 {
-    public class TuyenBayDLL_DAL
+    public class TuyenBayDLL_DAL : AbstractDLL_DAL<TuyenBayModel>
     {
-        public HttpClient _client;
-        public HttpResponseMessage _response;
-
-        public TuyenBayDLL_DAL()
-        {
-            _client = new HttpClient();
-            _client.BaseAddress = new Uri("https://6092bf0a85ff51001721390f.mockapi.io");
-        }
-
-        public List<TuyenBayModel> GetTuyenBayModels()
-        {
-            _response = _client.GetAsync("/TuyenBay").Result;
-            var sanBays = _response.Content.ReadAsAsync<IEnumerable<TuyenBayModel>>().Result;
-            List<TuyenBayModel> models = new List<TuyenBayModel>();
-            foreach (TuyenBayModel item in sanBays)
-            {
-                models.Add(item);
-            }
-            return models;
-        }
+        public TuyenBayDLL_DAL(String url):base(url)
+        {}
     }
 }

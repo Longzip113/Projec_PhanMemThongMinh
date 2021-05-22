@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DLL_DAL;
+using DLL_DAL.Model;
 
 namespace dental_sys.FormAdd
 {
@@ -20,6 +22,11 @@ namespace dental_sys.FormAdd
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void loadTuyenBay()
+        {
+            
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

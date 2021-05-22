@@ -15,7 +15,7 @@ namespace dental_sys
 {
     public partial class NhanVien : Form
     {
-        NhanVienDLL_DAL nhanVien = new NhanVienDLL_DAL();
+        NhanVienDLL_DAL nhanVien = new NhanVienDLL_DAL("USER");
 
         public NhanVien()
         {
@@ -24,7 +24,7 @@ namespace dental_sys
 
         private void Patient_Load(object sender, EventArgs e)
         {
-            List<NhanVienModel> listNV = nhanVien.GetNhanVienModels();
+            List<NhanVienModel> listNV = nhanVien.GetModels();
             guna2DataGridView1.Rows.Add(listNV.Count);
 
             for (int i = 0; i < listNV.Count; i++)
