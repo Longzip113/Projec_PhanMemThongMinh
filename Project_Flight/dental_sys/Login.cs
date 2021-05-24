@@ -37,8 +37,8 @@ namespace dental_sys
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             NhanVienModel model = new NhanVienModel();
-            model.TaiKhoan = guna2TextBox1.Text;
-            model.MatKhau = guna2TextBox2.Text;
+            model.taiKhoan = guna2TextBox1.Text;
+            model.matKhau = guna2TextBox2.Text;
 
             model = nhanviens.login(model);
             if(model != null)

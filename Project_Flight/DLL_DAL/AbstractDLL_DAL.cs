@@ -12,7 +12,7 @@ namespace DLL_DAL
     {
         public HttpClient _client;
         public HttpResponseMessage _response;
-        private String url;
+        public String url;
 
         public AbstractDLL_DAL(String url)
         {

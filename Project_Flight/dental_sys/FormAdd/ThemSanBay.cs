@@ -30,10 +30,10 @@ namespace dental_sys
 
         private void load()
         {
-            txtMaCode.Text = model.Code;
-            txtQuocGia.Text = model.QuocGia;
-            txtTenSanBay.Text = model.TenSanBay;
-            txtThanhPho.Text = model.TenThanhPho;
+            txtMaCode.Text = model.code;
+            txtQuocGia.Text = model.quocGia;
+            txtTenSanBay.Text = model.tenSanBay;
+            txtThanhPho.Text = model.tenThanhPho;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -59,11 +59,11 @@ namespace dental_sys
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             SanBayModel sanBayModel = new SanBayModel();
-            sanBayModel.Code = txtMaCode.Text.Trim();
-            sanBayModel.TenSanBay = txtTenSanBay.Text.Trim();
-            sanBayModel.TenThanhPho = txtThanhPho.Text.Trim();
-            sanBayModel.QuocGia = txtQuocGia.Text.Trim();
-            sanBayModel.TinhTrang = true;
+            sanBayModel.code = txtMaCode.Text.Trim();
+            sanBayModel.tenSanBay = txtTenSanBay.Text.Trim();
+            sanBayModel.tenThanhPho = txtThanhPho.Text.Trim();
+            sanBayModel.quocGia = txtQuocGia.Text.Trim();
+            sanBayModel.tinhTrang = true;
             if (guna2Button2.Text.Equals("Thêm"))
             {
                 sanBay.saveModel(sanBayModel);

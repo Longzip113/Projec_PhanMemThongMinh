@@ -16,7 +16,8 @@ namespace dental_sys
     public partial class NhanVien : Form
     {
         NhanVienDLL_DAL nhanVien = new NhanVienDLL_DAL("USER");
-
+        List<NhanVienModel> listNV;
+        NhanVienModel itemNhanVien;
         public NhanVien()
         {
             InitializeComponent();
@@ -24,16 +25,17 @@ namespace dental_sys
 
         private void Patient_Load(object sender, EventArgs e)
         {
-            List<NhanVienModel> listNV = nhanVien.GetModels();
+            listNV = nhanVien.GetModels();
             guna2DataGridView1.Rows.Add(listNV.Count);
+            slNV.Text = listNV.Count() + "";
 
             for (int i = 0; i < listNV.Count; i++)
             {
                 guna2DataGridView1.Rows[i].Cells[0].Value = Image.FromFile("photos\\user.png");
-                guna2DataGridView1.Rows[i].Cells[1].Value = listNV[i].HoTen; //"Nguyễn Thành Long";
-                guna2DataGridView1.Rows[i].Cells[2].Value = listNV[i].SDT; //"0356614606";
-                guna2DataGridView1.Rows[i].Cells[3].Value = listNV[i].CMND; //"30286654";
-                guna2DataGridView1.Rows[i].Cells[4].Value = listNV[i].TaiKhoan; //"Longzip113";
+                guna2DataGridView1.Rows[i].Cells[1].Value = listNV[i].hoTen; //"Nguyễn Thành Long";
+                guna2DataGridView1.Rows[i].Cells[2].Value = listNV[i].soDienThoai; //"0356614606";
+                guna2DataGridView1.Rows[i].Cells[3].Value = listNV[i].cmnd; //"30286654";
+                guna2DataGridView1.Rows[i].Cells[4].Value = listNV[i].taiKhoan; //"Longzip113";
                 guna2DataGridView1.Rows[i].Cells[5].Value = listNV[i].SoVeBan; //"100";
                 guna2DataGridView1.Rows[i].Cells[6].Value = listNV[i].TongDoanhThu; //"100,000,000";
             }
@@ -41,8 +43,29 @@ namespace dental_sys
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            ThemNhanVien add = new ThemNhanVien();
+            ThemNhanVien add = new ThemNhanVien(null);
             add.Show();
+        }
+
+        private void guna2DataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            guna2Button5.Enabled = true;
+            if (guna2DataGridView1.SelectedRows.Count > 0)
+            {
+                itemNhanVien = nhanVien.findNhanVienBycmnd(listNV, guna2DataGridView1.SelectedRows[0].Cells[3].Value.ToString());
+            }
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            ThemNhanVien add = new ThemNhanVien(itemNhanVien);
+            add.Show();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            nhanVien.delete(itemNhanVien.id);
+            MessageBox.Show("Xoa thanh cong");
         }
     }
 }

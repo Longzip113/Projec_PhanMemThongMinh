@@ -9,23 +9,27 @@ namespace DLL_DAL.Model
     public class TuyenBayModel
     {
 		private long Id;
-		private long sanBayDiID;
-		private long sanBayDenID;
-		private Boolean tinhTrang;
+		private long SanBayDiID;
+		private long SanBayDenID;
+		private Boolean TinhTrang;
 
-		private String tenSanBayDi;
-		private String thanhPhoDi;
+		private String TenSanBayDi;
+		private String ThanhPhoDi;
 
-		private String thanhPhoDen;
-		private String tenSanBayDen;
+		private String ThanhPhoDen;
+		private String TenSanBayDen;
+
+        private String tuyenBay;
+
 
         public long id { get => Id; set => Id = value; }
-        public long SanBayDiID { get => sanBayDiID; set => sanBayDiID = value; }
-        public long SanBayDenID { get => sanBayDenID; set => sanBayDenID = value; }
-        public bool TinhTrang { get => tinhTrang; set => tinhTrang = value; }
-        public string TenSanBayDi { get => tenSanBayDi; set => tenSanBayDi = value; }
-        public string ThanhPhoDi { get => thanhPhoDi; set => thanhPhoDi = value; }
-        public string ThanhPhoDen { get => thanhPhoDen; set => thanhPhoDen = value; }
-        public string TenSanBayDen { get => tenSanBayDen; set => tenSanBayDen = value; }
+        public long sanBayDiID { get => SanBayDiID; set => SanBayDiID = value; }
+        public long sanBayDenID { get => SanBayDenID; set => SanBayDenID = value; }
+        public bool tinhTrang { get => TinhTrang; set => TinhTrang = value; }
+        public string tenSanBayDi { get => TenSanBayDi; set => TenSanBayDi = value; }
+        public string thanhPhoDi { get => ThanhPhoDi; set => ThanhPhoDi = value; }
+        public string thanhPhoDen { get => ThanhPhoDen; set => ThanhPhoDen = value; }
+        public string tenSanBayDen { get => TenSanBayDen; set => TenSanBayDen = value; }
+        public string TuyenBay { get => tuyenBay; set => tuyenBay = value; }
     }
 }

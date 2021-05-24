@@ -9,17 +9,17 @@ namespace DLL_DAL.Model
     public class SanBayModel
     {
 		private long Id;
-		private String code;
-		private String tenThanhPho;
-		private String tenSanBay;
-		private String quocGia;
-		private Boolean tinhTrang;
+		private String Code;
+		private String TenThanhPho;
+		private String TenSanBay;
+		private String QuocGia;
+		private Boolean TinhTrang;
 
-        public string Code { get => code; set => code = value; }
         public long id { get => Id; set => Id = value; }
-        public string TenThanhPho { get => tenThanhPho; set => tenThanhPho = value; }
-        public string TenSanBay { get => tenSanBay; set => tenSanBay = value; }
-        public string QuocGia { get => quocGia; set => quocGia = value; }
-        public bool TinhTrang { get => tinhTrang; set => tinhTrang = value; }
+        public string code { get => Code; set => Code = value; }
+        public string tenThanhPho { get => TenThanhPho; set => TenThanhPho = value; }
+        public string tenSanBay { get => TenSanBay; set => TenSanBay = value; }
+        public string quocGia { get => QuocGia; set => QuocGia = value; }
+        public bool tinhTrang { get => TinhTrang; set => TinhTrang = value; }
     }
 }

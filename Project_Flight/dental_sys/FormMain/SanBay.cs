@@ -16,8 +16,7 @@ namespace dental_sys
     {
         SanBayDLL_DAL sanBay = new SanBayDLL_DAL("SanBay");
         List<SanBayModel> listSB;
-        SanBayModel sanBayModel;
-        long id;
+        SanBayModel sanBayItem;
         public SanBay()
         {
             InitializeComponent();
@@ -28,19 +27,21 @@ namespace dental_sys
         {
             SanBay_Load();
             guna2Button5.Enabled = false;
+            slSB.Text = listSB.Count() + "";
         }
         private void SanBay_Load()
         {
             listSB = sanBay.GetModels();
+            
 
             guna2DataGridView1.Rows.Add(listSB.Count);
             for(int i = 0; i < listSB.Count; i++)
             {
                 guna2DataGridView1.Rows[i].Cells[0].Value = Image.FromFile("photos\\flight.png");
-                guna2DataGridView1.Rows[i].Cells[1].Value = listSB[i].TenSanBay;
-                guna2DataGridView1.Rows[i].Cells[2].Value = listSB[i].Code;
-                guna2DataGridView1.Rows[i].Cells[3].Value = listSB[i].TenThanhPho;
-                guna2DataGridView1.Rows[i].Cells[4].Value = listSB[i].QuocGia;
+                guna2DataGridView1.Rows[i].Cells[1].Value = listSB[i].tenSanBay;
+                guna2DataGridView1.Rows[i].Cells[2].Value = listSB[i].code;
+                guna2DataGridView1.Rows[i].Cells[3].Value = listSB[i].tenThanhPho;
+                guna2DataGridView1.Rows[i].Cells[4].Value = listSB[i].quocGia;
             }
         }
 
@@ -54,31 +55,19 @@ namespace dental_sys
         {
 
         }
-        private void findSanBayByCode(string code)
-        {
-            foreach (SanBayModel item in listSB)
-            {
-                if (code.Equals(item.Code))
-                {
-                    id = item.id;
-                    sanBayModel = item;
-                    return;
-                }
-            }
-        }
 
         private void guna2DataGridView1_MouseClick(object sender, MouseEventArgs e)
         {
             guna2Button5.Enabled = true;
             if (guna2DataGridView1.SelectedRows.Count > 0)
             {
-                findSanBayByCode(guna2DataGridView1.SelectedRows[0].Cells[2].Value.ToString());
+                sanBayItem = sanBay.findSanBayByCode(listSB, guna2DataGridView1.SelectedRows[0].Cells[2].Value.ToString());
             }
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            sanBay.delete(id);
+            sanBay.delete(sanBayItem.id);
             guna2DataGridView1.Rows.Clear();
             load_Form();
             MessageBox.Show("Delete success");
@@ -88,7 +77,7 @@ namespace dental_sys
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            ThemSanBay themsanbay = new ThemSanBay(sanBayModel);
+            ThemSanBay themsanbay = new ThemSanBay(sanBayItem);
             themsanbay.Show();
         }
     }

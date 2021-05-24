@@ -9,41 +9,55 @@ namespace DLL_DAL.Model
     public class ChuyenBayModel
     {
 		private long Id;
-		private long tuyenBayId;
-		private long mayBayId;
-
-		private String tenSanBayDi; 
-		private String thanhPhoDi;
-        private String codeDi;
-
-        private String tenSanBayDen;
-		private String thanhPhoDen;
-        private String codeDen;
-
-		private int thoiGianBay;
-		private int ngayGio;
-
-        private int? giaVeThuongGia;
-        private int? giaVPhoThong;
-        private String hangBay;
+		private long TuyenBayId;
+		private long MayBayId;
 
 
-		private Boolean tinhTrang;
+        private String Ngay;
+        private String Gio;
+
+
+		private String TenSanBayDi; 
+		private String ThanhPhoDi;
+        private String CodeSanDi;
+        private long SanBayDiId;
+        private String NgayDi;
+
+        private String TenSanBayDen;
+		private String ThanhPhoDen;
+        private String CodeSanDen;
+        private long SanBayDenId;
+        private String NgayVe;
+
+        private int ThoiGianBay;
+
+        private int? DonGia;
+        private String HangVe;
+        private String TenMayBay;
+        private String LoaiVe;
+
+		private Boolean TinhTrang;
 
         public long id { get => Id; set => Id = value; }
-        public long TuyenBayId { get => tuyenBayId; set => tuyenBayId = value; }
-        public string TenSanBayDi { get => tenSanBayDi; set => tenSanBayDi = value; }
-        public string ThanhPhoDi { get => thanhPhoDi; set => thanhPhoDi = value; }
-        public string TenSanBayDen { get => tenSanBayDen; set => tenSanBayDen = value; }
-        public string ThanhPhoDen { get => thanhPhoDen; set => thanhPhoDen = value; }
-        public int ThoiGianBay { get => thoiGianBay; set => thoiGianBay = value; }
-        public int NgayGio { get => ngayGio; set => ngayGio = value; }
-        public bool TinhTrang { get => tinhTrang; set => tinhTrang = value; }
-        public long MayBayId { get => mayBayId; set => mayBayId = value; }
-        public int? GiaVeThuongGia { get => giaVeThuongGia; set => giaVeThuongGia = value; }
-        public int? GiaVPhoThong { get => giaVPhoThong; set => giaVPhoThong = value; }
-        public string HangBay { get => hangBay; set => hangBay = value; }
-        public string CodeDi { get => codeDi; set => codeDi = value; }
-        public string CodeDen { get => codeDen; set => codeDen = value; }
+        public long tuyenBayId { get => TuyenBayId; set => TuyenBayId = value; }
+        public long mayBayId { get => MayBayId; set => MayBayId = value; }
+        public string ngay { get => Ngay; set => Ngay = value; }
+        public string gio { get => Gio; set => Gio = value; }
+        public string tenSanBayDi { get => TenSanBayDi; set => TenSanBayDi = value; }
+        public string thanhPhoDi { get => ThanhPhoDi; set => ThanhPhoDi = value; }
+        public string codeSanDi { get => CodeSanDi; set => CodeSanDi = value; }
+        public string tenSanBayDen { get => TenSanBayDen; set => TenSanBayDen = value; }
+        public string thanhPhoDen { get => ThanhPhoDen; set => ThanhPhoDen = value; }
+        public string codeSanDen { get => CodeSanDen; set => CodeSanDen = value; }
+        public int thoiGianBay { get => ThoiGianBay; set => ThoiGianBay = value; }
+        public int? donGia { get => DonGia; set => DonGia = value; }
+        public string hangVe { get => HangVe; set => HangVe = value; }
+        public bool tinhTrang { get => TinhTrang; set => TinhTrang = value; }
+        public string tenMayBay { get => TenMayBay; set => TenMayBay = value; }
+        public long sanBayDiId { get => SanBayDiId; set => SanBayDiId = value; }
+        public string ngayDi { get => NgayDi; set => NgayDi = value; }
+        public long sanBayDenId { get => SanBayDenId; set => SanBayDenId = value; }
+        public string ngayVe { get => NgayVe; set => NgayVe = value; }
+        public string loaiVe { get => LoaiVe; set => LoaiVe = value; }
     }
 }

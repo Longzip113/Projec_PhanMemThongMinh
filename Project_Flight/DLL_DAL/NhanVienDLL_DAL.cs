@@ -25,11 +25,24 @@ namespace DLL_DAL
 
             foreach(NhanVienModel item in user)
             {
-                if (item.TaiKhoan.Equals(model.TaiKhoan) && item.MatKhau.Equals(model.MatKhau))
+                if (item.taiKhoan.Equals(model.taiKhoan) && item.matKhau.Equals(model.matKhau))
                 {
                     return item;
                 }
             }
+            return null;
+        }
+
+        public NhanVienModel findNhanVienBycmnd(List<NhanVienModel> listNV, string cmnd)
+        {
+            foreach (NhanVienModel item in listNV)
+            {
+                if (item.cmnd.Equals(cmnd))
+                {
+                    return item;
+                }
+            }
+
             return null;
         }
     }

@@ -17,10 +17,28 @@ namespace dental_sys
     {
         SanBayDLL_DAL sanBay = new SanBayDLL_DAL("SanBay");
         TuyenBayDLL_DAL tuyenBay = new TuyenBayDLL_DAL("TuyenBay");
-        public FormThem()
+
+        TuyenBayModel itemTuyenBay = null;
+        public FormThem(TuyenBayModel itemTuyenBay)
         {
             InitializeComponent();
+            this.itemTuyenBay = itemTuyenBay;
             loadSanBay(null, guna2ComboBox1);
+            if (this.itemTuyenBay != null)
+            {
+                loadTuyenBay();
+                guna2Button2.Text = "Sua";
+            }
+        }
+
+        private void loadTuyenBay()
+        {
+            List<SanBayModel> sanBayModels = sanBay.GetModels();
+            var itemDi = sanBayModels.Single(r => r.id == itemTuyenBay.sanBayDiID);
+            guna2ComboBox1.SelectedValue = itemDi.code;
+
+            var itemDen = sanBayModels.Single(r => r.id == itemTuyenBay.sanBayDenID);
+            guna2ComboBox3.SelectedValue = itemDen.code;
         }
 
         private void loadSanBay(SanBayModel model, Guna2ComboBox comboBox)
@@ -35,7 +53,7 @@ namespace dental_sys
             else
             {
                 List<SanBayModel> sanBayModels = sanBay.GetModels();
-                var itemToRemove = sanBayModels.Single(r => r.Code == model.Code);
+                var itemToRemove = sanBayModels.Single(r => r.code == model.code);
                 sanBayModels.Remove(itemToRemove);
 
                 comboBox.DataSource = sanBayModels;
@@ -61,15 +79,22 @@ namespace dental_sys
             SanBayModel sanBayDen = (SanBayModel)guna2ComboBox3.SelectedItem;
 
             TuyenBayModel tuyenBayModel = new TuyenBayModel();
-            tuyenBayModel.SanBayDenID = sanBayDen.id;
-            tuyenBayModel.SanBayDiID = sanBayDi.id;
-            tuyenBayModel.TenSanBayDen = sanBayDen.TenSanBay;
-            tuyenBayModel.TenSanBayDi = sanBayDi.TenSanBay;
-            tuyenBayModel.ThanhPhoDen = sanBayDen.TenThanhPho;
-            tuyenBayModel.ThanhPhoDi = sanBayDi.TenThanhPho;
-            tuyenBayModel.TinhTrang = true;
+            tuyenBayModel.sanBayDenID = sanBayDen.id;
+            tuyenBayModel.sanBayDiID = sanBayDi.id;
+            tuyenBayModel.tenSanBayDen = sanBayDen.tenSanBay;
+            tuyenBayModel.tenSanBayDi = sanBayDi.tenSanBay;
+            tuyenBayModel.thanhPhoDen = sanBayDen.tenThanhPho;
+            tuyenBayModel.thanhPhoDi = sanBayDi.tenThanhPho;
+            tuyenBayModel.tinhTrang = true;
 
-            tuyenBay.saveModel(tuyenBayModel);
+            if (guna2Button2.Text.Equals("Sua"))
+            {
+                tuyenBay.update(tuyenBayModel, itemTuyenBay.id);
+            }
+            else
+            {
+                tuyenBay.saveModel(tuyenBayModel);
+            }
             this.Close();
 
         }

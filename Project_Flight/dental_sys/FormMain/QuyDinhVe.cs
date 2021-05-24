@@ -22,30 +22,6 @@ namespace dental_sys
             InitializeComponent();
         }
 
-        private String converIntegerToDay(int date)
-        {
-            DateTime dt;
-            if (DateTime.TryParseExact(date.ToString(), "yyyyMMddhhmm",
-                                      CultureInfo.InvariantCulture,
-                                      DateTimeStyles.None, out dt))
-            {
-                Console.WriteLine(dt);
-            }
-            return dt.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture);
-        }
-
-        private String converIntegerToTime(int date)
-        {
-            DateTime dt;
-            if (DateTime.TryParseExact(date.ToString(), "yyyyMMddhhmm",
-                                      CultureInfo.InvariantCulture,
-                                      DateTimeStyles.None, out dt))
-            {
-                Console.WriteLine(dt);
-            }
-            return dt.ToString("hh:mm", CultureInfo.InvariantCulture);
-        }
-
         private void loadItem()
         {
             List<ChuyenBayModel> chuyenBayModels = chuyenBay.GetModels();
@@ -55,17 +31,17 @@ namespace dental_sys
             for (int i = 0; i < chuyenBayModels.Count; i++)
             {
                 list[i] = new itemdatve();
-                list[i].Noiden = chuyenBayModels[i].ThanhPhoDi +" (" + chuyenBayModels[i].CodeDi + ")"; //"Hồ Chí Minh (SGN)";
-                list[i].Noidi = chuyenBayModels[i].ThanhPhoDen + " (" + chuyenBayModels[i].CodeDen + ")";
-                list[i].NgayDi = converIntegerToDay(chuyenBayModels[i].NgayGio);
-                list[i].Gioden = converIntegerToTime(chuyenBayModels[i].NgayGio);
-                list[i].Giodi = converIntegerToTime(chuyenBayModels[i].NgayGio);
+                list[i].Noiden = chuyenBayModels[i].thanhPhoDi +" (" + chuyenBayModels[i].codeSanDi + ")"; //"Hồ Chí Minh (SGN)";
+                list[i].Noidi = chuyenBayModels[i].thanhPhoDen + " (" + chuyenBayModels[i].codeSanDen + ")";
+                list[i].NgayDi = chuyenBayModels[i].ngay;
+                //list[i].Gioden = int.Parse(chuyenBayModels[i].gio) + chuyenBayModels[i].thoiGianBay + "";
+                list[i].Giodi = chuyenBayModels[i].gio;
 
-                if (chuyenBayModels[i].HangBay.Equals("BambooAirline"))
+                if (chuyenBayModels[i].hangVe.Equals("BambooAirline"))
                 {
                     list[i].Img = Properties.Resources.logo_bamboo;
                 }
-                else if (chuyenBayModels[i].HangBay.Equals("VietJetAirline"))
+                else if (chuyenBayModels[i].hangVe.Equals("VietJetAirline"))
                 {
                     list[i].Img = Properties.Resources.logo_vietjet;
                 }

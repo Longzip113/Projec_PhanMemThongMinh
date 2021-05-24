@@ -44,7 +44,7 @@
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.slSB = new System.Windows.Forms.Label();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -172,7 +172,7 @@
             this.guna2Panel1.Controls.Add(this.guna2ComboBox1);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Controls.Add(this.slSB);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -252,17 +252,17 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Sân bay";
             // 
-            // label1
+            // slSB
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(34, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 67);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "2";
+            this.slSB.AutoSize = true;
+            this.slSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
+            this.slSB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.slSB.Location = new System.Drawing.Point(34, 23);
+            this.slSB.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.slSB.Name = "slSB";
+            this.slSB.Size = new System.Drawing.Size(63, 67);
+            this.slSB.TabIndex = 0;
+            this.slSB.Text = "2";
             // 
             // guna2Button5
             // 
@@ -337,7 +337,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label slSB;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private System.Windows.Forms.DataGridViewImageColumn Column2;

@@ -15,5 +15,18 @@ namespace DLL_DAL
     {
         public TuyenBayDLL_DAL(String url):base(url)
         {}
+
+        public TuyenBayModel findTuyenBayBySanBay(List<TuyenBayModel> listTB, string sanBaydi, string sanBayDen)
+        {
+            foreach (TuyenBayModel item in listTB)
+            {
+                if (item.tenSanBayDi.Equals(sanBaydi) && item.tenSanBayDen.Equals(sanBayDen))
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
     }
 }

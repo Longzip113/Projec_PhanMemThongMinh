@@ -17,7 +17,7 @@ namespace dental_sys
     {
         TuyenBayDLL_DAL tuyenBay = new TuyenBayDLL_DAL("TuyenBay");
         List<TuyenBayModel> listTB;
-        long id;
+        TuyenBayModel itemTuyenBay;
         public TuyenBay()
         {
             InitializeComponent();
@@ -28,42 +28,30 @@ namespace dental_sys
         {
             guna2Button5.Enabled = false;
             listTB = tuyenBay.GetModels();
-
+            slTB.Text = listTB.Count() + "";
             guna2DataGridView1.Rows.Add(listTB.Count);
             for (int i = 0; i < listTB.Count; i++)
             {
-                guna2DataGridView1.Rows[i].Cells[0].Value = listTB[i].TenSanBayDi;
-                guna2DataGridView1.Rows[i].Cells[1].Value = listTB[i].ThanhPhoDi;
+                guna2DataGridView1.Rows[i].Cells[0].Value = listTB[i].tenSanBayDi;
+                guna2DataGridView1.Rows[i].Cells[1].Value = listTB[i].thanhPhoDi;
                 guna2DataGridView1.Rows[i].Cells[2].Value = Image.FromFile("photos\\go.png");
-                guna2DataGridView1.Rows[i].Cells[3].Value = listTB[i].TenSanBayDen;
-                guna2DataGridView1.Rows[i].Cells[4].Value = listTB[i].ThanhPhoDen;
+                guna2DataGridView1.Rows[i].Cells[3].Value = listTB[i].tenSanBayDen;
+                guna2DataGridView1.Rows[i].Cells[4].Value = listTB[i].thanhPhoDen;
             }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            FormThem a = new FormThem();
+            FormThem a = new FormThem(null);
             a.Show();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            tuyenBay.delete(id);
+            tuyenBay.delete(itemTuyenBay.id);
             guna2DataGridView1.Rows.Clear();
             Load_Form();
             MessageBox.Show("Delete success");
-        }
-
-        private void findTuyenBayBySanBay(string sanBaydi, string sanBayDen)
-        {
-            foreach (TuyenBayModel item in listTB)
-            {
-                if (item.TenSanBayDi.Equals(sanBaydi) && item.TenSanBayDen.Equals(sanBayDen))
-                {
-                    id = item.id;
-                    return;
-                }
-            }
         }
 
         private void guna2DataGridView1_MouseClick(object sender, MouseEventArgs e)
@@ -71,8 +59,14 @@ namespace dental_sys
             guna2Button5.Enabled = true;
             if (guna2DataGridView1.SelectedRows.Count > 0)
             {
-                findTuyenBayBySanBay(guna2DataGridView1.SelectedRows[0].Cells[0].Value.ToString(), guna2DataGridView1.SelectedRows[0].Cells[3].Value.ToString());
+                itemTuyenBay = tuyenBay.findTuyenBayBySanBay(listTB, guna2DataGridView1.SelectedRows[0].Cells[0].Value.ToString(), guna2DataGridView1.SelectedRows[0].Cells[3].Value.ToString());
             }
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            FormThem a = new FormThem(itemTuyenBay);
+            a.Show();
         }
     }
 }

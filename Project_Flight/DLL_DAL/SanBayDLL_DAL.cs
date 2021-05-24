@@ -17,5 +17,18 @@ namespace DLL_DAL
         {
         }
 
+        public SanBayModel findSanBayByCode(List<SanBayModel> listSB, string code)
+        {
+            foreach (SanBayModel item in listSB)
+            {
+                if (code.Equals(item.code))
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
+
     }
 }

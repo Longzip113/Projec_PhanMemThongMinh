@@ -8,50 +8,27 @@ namespace DLL_DAL.Model
 {
     public class NhanVienModel
     {
-        private  String Id;
-        public String id
-        {
-            get { return Id; }
-            set { Id = value; }
-        }
+        private long Id;
+        private long ChucVuID;
+        private String HoTen;
+        private String SoDienThoai;
 
-
-        private String hoTen;
-
-        public String HoTen
-        {
-            get { return hoTen; }
-            set { hoTen = value; }
-        }
-
-        private String sDT;
-
-        public String SDT
-        {
-            get { return sDT; }
-            set { sDT = value; }
-        }
-        private String taiKhoan;
-
-        public String TaiKhoan
-        {
-            get { return taiKhoan; }
-            set { taiKhoan = value; }
-        }
-        private String matKhau;
-
-        public String MatKhau
-        {
-            get { return matKhau; }
-            set { matKhau = value; }
-        }
-
-        public string CMND { get => cMND; set => cMND = value; }
-        public int SoVeBan { get => soVeBan; set => soVeBan = value; }
-        public long TongDoanhThu { get => tongDoanhThu; set => tongDoanhThu = value; }
-
-        private String cMND;
+        private String TaiKhoan;
+        private String MatKhau;
+        private Boolean TinhTrang;
+        private String Cmnd;
         private int soVeBan;
         private long tongDoanhThu;
+
+        public long id { get => Id; set => Id = value; }
+        public long chucVuID { get => ChucVuID; set => ChucVuID = value; }
+        public string hoTen { get => HoTen; set => HoTen = value; }
+        public string soDienThoai { get => SoDienThoai; set => SoDienThoai = value; }
+        public string taiKhoan { get => TaiKhoan; set => TaiKhoan = value; }
+        public string matKhau { get => MatKhau; set => MatKhau = value; }
+        public Boolean tinhTrang { get => TinhTrang; set => TinhTrang = value; }
+        public string cmnd { get => Cmnd; set => Cmnd = value; }
+        public int SoVeBan { get => soVeBan; set => soVeBan = value; }
+        public long TongDoanhThu { get => tongDoanhThu; set => tongDoanhThu = value; }
     }
 }
