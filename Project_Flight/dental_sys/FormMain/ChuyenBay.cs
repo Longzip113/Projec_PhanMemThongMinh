@@ -49,13 +49,13 @@ namespace dental_sys
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            ThemChuyenBay themChuyenBay = new ThemChuyenBay(null);
+            ThemChuyenBay themChuyenBay = new ThemChuyenBay(null, listCB);
             themChuyenBay.Show();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            ThemChuyenBay themChuyenBay = new ThemChuyenBay(chuyenBayItem);
+            ThemChuyenBay themChuyenBay = new ThemChuyenBay(chuyenBayItem, listCB);
             themChuyenBay.Show();
         }
 
@@ -64,7 +64,7 @@ namespace dental_sys
             guna2Button5.Enabled = true;
             if (guna2DataGridView1.SelectedRows.Count > 0)
             {
-                chuyenBayItem = chuyenBay.findChuyenBayBySanBay(listCB, guna2DataGridView1.SelectedRows[0].Cells[0].Value.ToString(), guna2DataGridView1.SelectedRows[0].Cells[5].Value.ToString());
+                chuyenBayItem = chuyenBay.findChuyenBayBySanBay(listCB, guna2DataGridView1.SelectedRows[0].Cells[0].Value.ToString(), guna2DataGridView1.SelectedRows[0].Cells[5].Value.ToString(), guna2DataGridView1.SelectedRows[0].Cells[2].Value.ToString());
             }
         }
 

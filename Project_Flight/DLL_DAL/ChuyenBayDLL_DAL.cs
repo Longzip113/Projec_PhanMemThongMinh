@@ -11,18 +11,19 @@ using Newtonsoft.Json;
 
 namespace DLL_DAL
 {
-    public class ChuyenBayDLL_DAL:AbstractDLL_DAL<ChuyenBayModel>
+    public class ChuyenBayDLL_DAL : AbstractDLL_DAL<ChuyenBayModel>
     {
-        public ChuyenBayDLL_DAL(String url):base(url)
+        public ChuyenBayDLL_DAL(String url) : base(url)
         {
         }
 
 
-        public ChuyenBayModel findChuyenBayBySanBay(List<ChuyenBayModel> listCB, string sanBaydi, string sanBayDen)
+        public ChuyenBayModel findChuyenBayBySanBay(List<ChuyenBayModel> listCB, string sanBaydi, string sanBayDen, string time)
         {
             foreach (ChuyenBayModel item in listCB)
             {
-                if (item.tenSanBayDi.Equals(sanBaydi) && item.tenSanBayDen.Equals(sanBayDen))
+                String day = item.ngay + " - " + item.gio;
+                if (item.tenSanBayDi.Equals(sanBaydi) && item.tenSanBayDen.Equals(sanBayDen) && day.Equals(time))
                 {
                     return item;
                 }
@@ -42,6 +43,24 @@ namespace DLL_DAL
                 models.Add(item);
             }
             return models;
+        }
+
+        public String isCheckChuyenBay(List<ChuyenBayModel> listCB, ChuyenBayModel model)
+        {
+            String day = model.ngay + " - " + model.gio;
+            foreach (ChuyenBayModel item in listCB)
+            {
+                if (model.id != item.id)
+                {
+                    String time = item.ngay + " - " + item.gio;
+                    if (item.tuyenBayId == model.tuyenBayId && day.Equals(time))
+                    {
+                        return "Chuyến bay cùng giờ đã tồn tại";
+                    }
+                }
+            }
+
+            return null;
         }
     }
 }

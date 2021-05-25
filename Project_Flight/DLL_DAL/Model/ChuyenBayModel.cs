@@ -12,10 +12,8 @@ namespace DLL_DAL.Model
 		private long TuyenBayId;
 		private long MayBayId;
 
-
         private String Ngay;
         private String Gio;
-
 
 		private String TenSanBayDi; 
 		private String ThanhPhoDi;
@@ -29,7 +27,7 @@ namespace DLL_DAL.Model
         private long SanBayDenId;
         private String NgayVe;
 
-        private int ThoiGianBay;
+        private float ThoiGianBay;
 
         private int? DonGia;
         private String HangVe;
@@ -49,7 +47,7 @@ namespace DLL_DAL.Model
         public string tenSanBayDen { get => TenSanBayDen; set => TenSanBayDen = value; }
         public string thanhPhoDen { get => ThanhPhoDen; set => ThanhPhoDen = value; }
         public string codeSanDen { get => CodeSanDen; set => CodeSanDen = value; }
-        public int thoiGianBay { get => ThoiGianBay; set => ThoiGianBay = value; }
+        public float thoiGianBay { get => ThoiGianBay; set => ThoiGianBay = value; }
         public int? donGia { get => DonGia; set => DonGia = value; }
         public string hangVe { get => HangVe; set => HangVe = value; }
         public bool tinhTrang { get => TinhTrang; set => TinhTrang = value; }

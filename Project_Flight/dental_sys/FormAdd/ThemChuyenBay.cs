@@ -15,7 +15,7 @@ namespace dental_sys.FormAdd
 {
     public partial class ThemChuyenBay : Form
     {
-        MayBayDLL_DAL mayBay = new MayBayDLL_DAL("USER");
+        MayBayDLL_DAL mayBay = new MayBayDLL_DAL("maybay");
         List<MayBayModel> listMB;
 
         TuyenBayDLL_DAL tuyenBay = new TuyenBayDLL_DAL("TuyenBay");
@@ -23,8 +23,9 @@ namespace dental_sys.FormAdd
 
         ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL("ChuyenBay");
         ChuyenBayModel chuyenBayItem;
+        List<ChuyenBayModel> listCB;
 
-        public ThemChuyenBay(ChuyenBayModel chuyenBayItem)
+        public ThemChuyenBay(ChuyenBayModel chuyenBayItem, List<ChuyenBayModel> listCB)
         {
             InitializeComponent();
             listMB = mayBay.GetModels();
@@ -34,6 +35,7 @@ namespace dental_sys.FormAdd
                 item.TuyenBay = item.tenSanBayDi + " -- " + item.tenSanBayDen;
             }
             this.chuyenBayItem = chuyenBayItem;
+            this.listCB = listCB;
             if(chuyenBayItem != null)
             {
                 guna2Button2.Text = "Sửa";
@@ -48,7 +50,7 @@ namespace dental_sys.FormAdd
             guna2ComboBox3.SelectedItem = chuyenBayItem.hangVe;
             guna2ComboBox4.SelectedValue = chuyenBayItem.mayBayId;
             string[] days = chuyenBayItem.ngay.Split('-');
-            string[] times = chuyenBayItem.gio.Split('.');
+            string[] times = chuyenBayItem.gio.Split(':');
 
             int year = int.Parse(days[0]);
             int month = int.Parse(days[1]);
@@ -89,8 +91,10 @@ namespace dental_sys.FormAdd
                 guna2ComboBox2.Items.Add(i);
             }
             loadMayBay(listMB);
-            loadUpdate();
-
+            if (chuyenBayItem != null)
+            {
+                loadUpdate();
+            }
         }
 
         private void loadMayBay(List<MayBayModel> listMB)
@@ -129,19 +133,36 @@ namespace dental_sys.FormAdd
 
             chuyenBayModel.mayBayId = mayBayItem.id;
             chuyenBayModel.tuyenBayId = tuyenBayItem.id;
-            chuyenBayModel.thoiGianBay = int.Parse(guna2TextBox1.Text);
-            chuyenBayModel.gio = guna2ComboBox5.SelectedItem.ToString() + "." + guna2ComboBox2.SelectedItem.ToString();
+            chuyenBayModel.thoiGianBay = float.Parse(guna2TextBox1.Text);
+            chuyenBayModel.gio = guna2ComboBox5.SelectedItem.ToString() + ":" + guna2ComboBox2.SelectedItem.ToString();
             chuyenBayModel.ngay = time.ToString(format);
             chuyenBayModel.tinhTrang = true;
+
             
             if(guna2Button2.Text.Equals("Sửa"))
             {
+                String checkChuyenBay = chuyenBay.isCheckChuyenBay(listCB, chuyenBayModel);
                 chuyenBayModel.id = chuyenBayItem.id;
-                chuyenBay.update(chuyenBayModel);
+                if (checkChuyenBay == null)
+                {
+                    chuyenBay.update(chuyenBayModel);
+                }
+                else
+                {
+                    MessageBox.Show(checkChuyenBay);
+                }
             }
             else
             {
-                chuyenBay.saveModel(chuyenBayModel);
+                String checkChuyenBay = chuyenBay.isCheckChuyenBay(listCB, chuyenBayModel);
+                if (checkChuyenBay == null)
+                {
+                    chuyenBay.saveModel(chuyenBayModel);
+                }
+                else
+                {
+                    MessageBox.Show(checkChuyenBay);
+                }
             }
             this.Close();
         }

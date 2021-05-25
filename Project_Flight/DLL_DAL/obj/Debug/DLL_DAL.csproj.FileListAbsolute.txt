@@ -17,4 +17,3 @@ C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\DL
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\DLL_DAL\obj\Debug\DLL_DAL.csproj.CopyComplete
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\DLL_DAL\obj\Debug\DLL_DAL.dll
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\DLL_DAL\obj\Debug\DLL_DAL.pdb
-C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\DLL_DAL\obj\Debug\DLL_DAL.csprojAssemblyReference.cache
