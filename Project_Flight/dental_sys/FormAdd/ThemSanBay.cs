@@ -12,7 +12,7 @@ using DLL_DAL.Model;
 
 namespace dental_sys
 {
-    
+
     public partial class ThemSanBay : Form
     {
         SanBayDLL_DAL sanBay = new SanBayDLL_DAL("SanBay");
@@ -24,7 +24,7 @@ namespace dental_sys
             InitializeComponent();
             this.model = model;
             this.listSB = listSB;
-            if(model != null)
+            if (model != null)
             {
                 load();
                 guna2Button2.Text = "Sua";
@@ -52,25 +52,33 @@ namespace dental_sys
             sanBayModel.tenThanhPho = txtThanhPho.Text.Trim();
             sanBayModel.quocGia = txtQuocGia.Text.Trim();
             sanBayModel.tinhTrang = true;
-            String check = sanBay.ischeckSanBay(sanBayModel, listSB);
 
-            if (check == null)
+            if (guna2Button2.Text.Equals("Thêm"))
             {
-                if (guna2Button2.Text.Equals("Thêm"))
+                String check = sanBay.ischeckSanBay(sanBayModel, listSB);
+                if (check == null)
                 {
-                    sanBayModel.id = 0;
                     sanBay.saveModel(sanBayModel);
+                    this.Close();
                 }
                 else
                 {
-                    sanBayModel.id = model.id;
-                    sanBay.update(sanBayModel);
+                    MessageBox.Show(check);
                 }
-                this.Close();
             }
             else
             {
-                MessageBox.Show(check);
+                sanBayModel.id = model.id;
+                String check = sanBay.ischeckSanBay(sanBayModel, listSB);
+                if (check == null)
+                {
+                    sanBay.update(sanBayModel);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show(check);
+                }
             }
         }
     }

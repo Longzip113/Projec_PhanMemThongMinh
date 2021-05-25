@@ -27,6 +27,7 @@ namespace dental_sys
         {
             SanBay_Load();
             guna2Button5.Enabled = false;
+            guna2Button4.Enabled = false;
             slSB.Text = listSB.Count() + "";
         }
         private void SanBay_Load()
@@ -54,6 +55,7 @@ namespace dental_sys
         private void guna2DataGridView1_MouseClick(object sender, MouseEventArgs e)
         {
             guna2Button5.Enabled = true;
+            guna2Button4.Enabled = true;
             if (guna2DataGridView1.SelectedRows.Count > 0)
             {
                 sanBayItem = sanBay.findSanBayByCode(listSB, guna2DataGridView1.SelectedRows[0].Cells[2].Value.ToString());
