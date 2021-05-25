@@ -17,10 +17,13 @@ namespace dental_sys
     {
         SanBayDLL_DAL sanBay = new SanBayDLL_DAL("SanBay");
         SanBayModel model;
-        public ThemSanBay(SanBayModel model)
+        List<SanBayModel> listSB;
+
+        public ThemSanBay(SanBayModel model, List<SanBayModel> listSB)
         {
             InitializeComponent();
             this.model = model;
+            this.listSB = listSB;
             if(model != null)
             {
                 load();
@@ -41,21 +44,6 @@ namespace dental_sys
             this.Close();
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ThemSanBay_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             SanBayModel sanBayModel = new SanBayModel();
@@ -64,15 +52,26 @@ namespace dental_sys
             sanBayModel.tenThanhPho = txtThanhPho.Text.Trim();
             sanBayModel.quocGia = txtQuocGia.Text.Trim();
             sanBayModel.tinhTrang = true;
-            if (guna2Button2.Text.Equals("Thêm"))
+            String check = sanBay.ischeckSanBay(sanBayModel, listSB);
+
+            if (check == null)
             {
-                sanBay.saveModel(sanBayModel);
+                if (guna2Button2.Text.Equals("Thêm"))
+                {
+                    sanBayModel.id = 0;
+                    sanBay.saveModel(sanBayModel);
+                }
+                else
+                {
+                    sanBayModel.id = model.id;
+                    sanBay.update(sanBayModel);
+                }
+                this.Close();
             }
             else
             {
-                sanBay.update(sanBayModel, model.id);
+                MessageBox.Show(check);
             }
-            this.Close();
         }
     }
 }

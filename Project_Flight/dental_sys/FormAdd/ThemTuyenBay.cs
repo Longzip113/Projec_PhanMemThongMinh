@@ -89,7 +89,8 @@ namespace dental_sys
 
             if (guna2Button2.Text.Equals("Sua"))
             {
-                tuyenBay.update(tuyenBayModel, itemTuyenBay.id);
+                tuyenBayModel.id = itemTuyenBay.id;
+                tuyenBay.update(tuyenBayModel);
             }
             else
             {

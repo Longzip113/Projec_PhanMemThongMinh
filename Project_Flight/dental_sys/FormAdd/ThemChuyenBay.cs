@@ -136,7 +136,8 @@ namespace dental_sys.FormAdd
             
             if(guna2Button2.Text.Equals("Sửa"))
             {
-                chuyenBay.update(chuyenBayModel, chuyenBayItem.id);
+                chuyenBayModel.id = chuyenBayItem.id;
+                chuyenBay.update(chuyenBayModel);
             }
             else
             {

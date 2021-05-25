@@ -20,7 +20,7 @@ namespace DLL_DAL
         // chuc nang dang nhap
         public NhanVienModel login(NhanVienModel model)
         {
-            _response = _client.GetAsync("/USER").Result;
+            _response = _client.GetAsync("nhanvien").Result;
             var user = _response.Content.ReadAsAsync<IEnumerable<NhanVienModel>>().Result;
 
             foreach(NhanVienModel item in user)

@@ -16,14 +16,14 @@ namespace DLL_DAL
 
         public AbstractDLL_DAL(String url)
         {
-            this.url = url;
+            this.url = url.ToLower();
             _client = new HttpClient();
-            _client.BaseAddress = new Uri("https://6092bf0a85ff51001721390f.mockapi.io");
+            _client.BaseAddress = new Uri("https://filght.loca.lt/");
         }
 
         public List<T> GetModels()
         {
-            _response = _client.GetAsync($"/{url}").Result;
+            _response = _client.GetAsync($"{url}").Result;
             var listModel = _response.Content.ReadAsAsync<IEnumerable<T>>().Result;
             List<T> models = new List<T>();
             foreach (T item in listModel)
@@ -40,14 +40,14 @@ namespace DLL_DAL
             var buffer = Encoding.UTF8.GetBytes(jSON);
             var byteContext = new ByteArrayContent(buffer);
             byteContext.Headers.ContentType = new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json");
-            _client.PostAsync($"/{url}", byteContext);
+            _client.PostAsync($"{url}", byteContext);
         }
 
         public Boolean delete(long id)
         {
             try
             {
-                _client.DeleteAsync($"/{url}/{id}");
+                _client.DeleteAsync($"{url}/{id}");
                 return true;
             }
             catch
@@ -56,7 +56,7 @@ namespace DLL_DAL
             }
         }
 
-        public Boolean update(T model, long id)
+        public Boolean update(T model)
         {
             try
             {
@@ -64,7 +64,7 @@ namespace DLL_DAL
                 var buffer = Encoding.UTF8.GetBytes(Json);
                 var byteContext = new ByteArrayContent(buffer);
                 byteContext.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                _client.PutAsync($"/{url}/{id}", byteContext);
+                _client.PutAsync($"{url}", byteContext);
                 return true;
             }
             catch

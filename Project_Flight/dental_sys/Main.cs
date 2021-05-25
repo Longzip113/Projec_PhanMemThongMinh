@@ -27,7 +27,7 @@ namespace dental_sys
             label_val.Text = "Doanh Thu";
             guna2PictureBox_val.Image = Properties.Resources.income;
             container(new DoanhThu());
-            //nameUser.Text = model.HoTen;
+            //nameUser.Text = model.hoTen;
         }
 
         private void container(object _form)

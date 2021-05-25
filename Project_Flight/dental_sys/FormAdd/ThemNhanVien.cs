@@ -52,7 +52,8 @@ namespace dental_sys.FormAdd
 
             if(guna2Button2.Text.Equals("Sua"))
             {
-                nhanVien.update(nhanVienModel, itemNhanVien.id);
+                nhanVienModel.id = itemNhanVien.id;
+                nhanVien.update(nhanVienModel);
             }
             else
             {

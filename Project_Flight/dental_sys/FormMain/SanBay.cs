@@ -14,7 +14,7 @@ namespace dental_sys
 {
     public partial class SanBay : Form
     {
-        SanBayDLL_DAL sanBay = new SanBayDLL_DAL("SanBay");
+        SanBayDLL_DAL sanBay = new SanBayDLL_DAL("sanbay");
         List<SanBayModel> listSB;
         SanBayModel sanBayItem;
         public SanBay()
@@ -47,13 +47,8 @@ namespace dental_sys
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            ThemSanBay themsanbay = new ThemSanBay(null);
+            ThemSanBay themsanbay = new ThemSanBay(null, listSB);
             themsanbay.Show();
-        }
-
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void guna2DataGridView1_MouseClick(object sender, MouseEventArgs e)
@@ -77,7 +72,7 @@ namespace dental_sys
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            ThemSanBay themsanbay = new ThemSanBay(sanBayItem);
+            ThemSanBay themsanbay = new ThemSanBay(sanBayItem, listSB);
             themsanbay.Show();
         }
     }

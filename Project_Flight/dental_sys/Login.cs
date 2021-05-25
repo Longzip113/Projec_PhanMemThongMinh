@@ -18,7 +18,7 @@ namespace dental_sys
 {
     public partial class Login : Form
     {
-        NhanVienDLL_DAL nhanviens = new NhanVienDLL_DAL("USER");
+        NhanVienDLL_DAL nhanviens = new NhanVienDLL_DAL("nhanvien");
 
         public Login()
         {

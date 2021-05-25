@@ -30,5 +30,22 @@ namespace DLL_DAL
             return null;
         }
 
+        public String ischeckSanBay(SanBayModel model, List<SanBayModel> sanBayModels)
+        {
+            foreach(SanBayModel item in sanBayModels)
+            {
+                if(item.code.Equals(model.code) && model.id != item.id)
+                {
+                    return "Code sân bay đã tồn tại";
+                }
+
+                if (item.tenSanBay.Equals(model.tenSanBay) && model.id != item.id)
+                {
+                    return "Tên sân bay đã tồn tại";
+                }
+            }
+            return null;
+        }
+
     }
 }
