@@ -15,7 +15,7 @@ namespace dental_sys
 {
     public partial class NhanVien : Form
     {
-        NhanVienDLL_DAL nhanVien = new NhanVienDLL_DAL("USER");
+        NhanVienDLL_DAL nhanVien = new NhanVienDLL_DAL("nhanvien");
         List<NhanVienModel> listNV;
         NhanVienModel itemNhanVien;
         public NhanVien()
@@ -43,7 +43,7 @@ namespace dental_sys
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            ThemNhanVien add = new ThemNhanVien(null);
+            ThemNhanVien add = new ThemNhanVien(null, listNV);
             add.Show();
         }
 
@@ -58,14 +58,22 @@ namespace dental_sys
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            ThemNhanVien add = new ThemNhanVien(itemNhanVien);
+            ThemNhanVien add = new ThemNhanVien(itemNhanVien, listNV);
             add.Show();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            nhanVien.delete(itemNhanVien.id);
-            MessageBox.Show("Xoa thanh cong");
+            String checkNhanVien = nhanVien.isCheckNhanVienDatVe(itemNhanVien.id);
+            if (checkNhanVien == null)
+            {
+                nhanVien.delete(itemNhanVien.id);
+                MessageBox.Show("Xóa thành công");
+            }
+            else
+            {
+                MessageBox.Show(checkNhanVien);
+            }
         }
     }
 }

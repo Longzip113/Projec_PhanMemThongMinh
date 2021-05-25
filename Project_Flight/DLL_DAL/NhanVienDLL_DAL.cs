@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace DLL_DAL
 {
-    public class NhanVienDLL_DAL:AbstractDLL_DAL<NhanVienModel>
+    public class NhanVienDLL_DAL : AbstractDLL_DAL<NhanVienModel>
     {
-        public NhanVienDLL_DAL(String url):base(url)
+        public NhanVienDLL_DAL(String url) : base(url)
         {
         }
 
@@ -23,7 +23,7 @@ namespace DLL_DAL
             _response = _client.GetAsync("nhanvien").Result;
             var user = _response.Content.ReadAsAsync<IEnumerable<NhanVienModel>>().Result;
 
-            foreach(NhanVienModel item in user)
+            foreach (NhanVienModel item in user)
             {
                 if (item.taiKhoan.Equals(model.taiKhoan) && item.matKhau.Equals(model.matKhau))
                 {
@@ -43,6 +43,50 @@ namespace DLL_DAL
                 }
             }
 
+            return null;
+        }
+
+        public String isCheckNhanVien(List<NhanVienModel> listNV, NhanVienModel model)
+        {
+            foreach (NhanVienModel item in listNV)
+            {
+                if (item.id != model.id)
+                {
+                    if (item.cmnd.Equals(model.cmnd))
+                    {
+                        return "cmnd đã tồn tại !";
+                    }
+
+                    if (item.soDienThoai.Equals(model.soDienThoai))
+                    {
+                        return "Số điện thoại đã tồn tại !";
+                    }
+
+                    if (item.taiKhoan.Equals(model.taiKhoan))
+                    {
+                        return "Tài khoản đã tồn tại !";
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        public String isCheckNhanVienDatVe(long id)
+        {
+            PhieuDatVeDLL_DAL phieuDatVeDLL_DAL = new PhieuDatVeDLL_DAL("phieudatve");
+            List<PhieuDatVeModel> listPDV = phieuDatVeDLL_DAL.GetModels();
+
+            foreach(PhieuDatVeModel item in listPDV)
+            {
+                if(item.roleDatVe == 1)
+                {
+                    if(item.nguoiDatVe_Id == id)
+                    {
+                        return "Nhân viên đã có tên trong phiếu đặt vé không thể xóa được !!";
+                    }
+                }
+            }
             return null;
         }
     }

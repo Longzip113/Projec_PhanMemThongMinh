@@ -28,5 +28,17 @@ namespace DLL_DAL
 
             return null;
         }
+
+        public String isCheckTuyenBay(List<TuyenBayModel> listTB, long sanBayDenId, long sanBayDiId)
+        {
+            foreach(TuyenBayModel item in listTB)
+            {
+                if(item.sanBayDiID == sanBayDiId && item.sanBayDenID == sanBayDenId)
+                {
+                    return "Tuyến bay đã tồn tại";
+                }
+            }
+            return null;
+        }
     }
 }

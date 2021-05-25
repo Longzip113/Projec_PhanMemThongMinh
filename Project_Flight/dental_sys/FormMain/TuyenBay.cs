@@ -15,7 +15,7 @@ namespace dental_sys
 {
     public partial class TuyenBay : Form
     {
-        TuyenBayDLL_DAL tuyenBay = new TuyenBayDLL_DAL("TuyenBay");
+        TuyenBayDLL_DAL tuyenBay = new TuyenBayDLL_DAL("tuyenbay");
         List<TuyenBayModel> listTB;
         TuyenBayModel itemTuyenBay;
         public TuyenBay()
@@ -42,7 +42,7 @@ namespace dental_sys
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            FormThem a = new FormThem(null);
+            FormThem a = new FormThem(listTB, null);
             a.Show();
         }
 
@@ -65,7 +65,7 @@ namespace dental_sys
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            FormThem a = new FormThem(itemTuyenBay);
+            FormThem a = new FormThem(listTB, itemTuyenBay);
             a.Show();
         }
     }

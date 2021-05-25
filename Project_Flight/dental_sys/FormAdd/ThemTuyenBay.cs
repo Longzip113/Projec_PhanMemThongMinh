@@ -19,10 +19,12 @@ namespace dental_sys
         TuyenBayDLL_DAL tuyenBay = new TuyenBayDLL_DAL("TuyenBay");
 
         TuyenBayModel itemTuyenBay = null;
-        public FormThem(TuyenBayModel itemTuyenBay)
+        List<TuyenBayModel> listTB;
+        public FormThem(List<TuyenBayModel> listTB, TuyenBayModel itemTuyenBay)
         {
             InitializeComponent();
             this.itemTuyenBay = itemTuyenBay;
+            this.listTB = listTB;
             loadSanBay(null, guna2ComboBox1);
             if (this.itemTuyenBay != null)
             {
@@ -87,16 +89,25 @@ namespace dental_sys
             tuyenBayModel.thanhPhoDi = sanBayDi.tenThanhPho;
             tuyenBayModel.tinhTrang = true;
 
-            if (guna2Button2.Text.Equals("Sua"))
+            String checkTuyenBay = tuyenBay.isCheckTuyenBay(listTB, tuyenBayModel.sanBayDenID, tuyenBayModel.sanBayDiID);
+
+            if (checkTuyenBay == null)
             {
-                tuyenBayModel.id = itemTuyenBay.id;
-                tuyenBay.update(tuyenBayModel);
+                if (guna2Button2.Text.Equals("Sua"))
+                {
+                    tuyenBayModel.id = itemTuyenBay.id;
+                    tuyenBay.update(tuyenBayModel);
+                }
+                else
+                {
+                    tuyenBay.saveModel(tuyenBayModel);
+                }
+                this.Close();
             }
             else
             {
-                tuyenBay.saveModel(tuyenBayModel);
+                MessageBox.Show(checkTuyenBay);
             }
-            this.Close();
 
         }
     }

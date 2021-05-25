@@ -8,7 +8,7 @@ using DLL_DAL.Model;
 
 namespace DLL_DAL
 {
-    public class PhieuDatVeDLL_DAL : AbstractDLL_DAL<PhieuDatVeDLL_DAL>
+    public class PhieuDatVeDLL_DAL : AbstractDLL_DAL<PhieuDatVeModel>
     {
         public PhieuDatVeDLL_DAL(String url) : base(url)
         {
