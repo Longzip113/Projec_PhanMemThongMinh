@@ -19,11 +19,13 @@ namespace dental_sys
     {
         ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL("ChuyenBay");
         List<ChuyenBayModel> chuyenBayModels;
+        NhanVienModel model;
 
         SanBayDLL_DAL sanBay = new SanBayDLL_DAL("SanBay");
-        public BanVe()
+        public BanVe(NhanVienModel model)
         {
             InitializeComponent();
+            this.model = model;
         }
 
         private void loadSanBay(SanBayModel model, Guna2ComboBox comboBox)
@@ -52,6 +54,8 @@ namespace dental_sys
             loadSanBay(null, guna2ComboBox1);
             loadRoleVe();
             guna2CustomRadioButton1.Checked = true;
+
+            
         }
 
         private void loadRoleVe()
@@ -65,19 +69,26 @@ namespace dental_sys
 
         private void loadItem(List<ChuyenBayModel> chuyenBayModels)
         {
-            
-            chuyenBayModels = chuyenBay.GetModels();
+            flowLayoutPanel1.Controls.Clear();
+
+            if (chuyenBayModels.Count == 0)
+            {
+                MessageBox.Show("Hiện tại chưa có chuyến bay bạn muốn tìm kiếm");
+                return;
+            }
             ListItem[] list = new ListItem[chuyenBayModels.Count];
 
             for (int i = 0; i < chuyenBayModels.Count; i++)
             {
                 list[i] = new ListItem();
-                list[i].Noiden = chuyenBayModels[i].thanhPhoDi + " (" + chuyenBayModels[i].codeSanDi + ")"; //"Hồ Chí Minh (SGN)";
+                list[i].Noiden = chuyenBayModels[i].thanhPhoDi + " (" + chuyenBayModels[i].codeSanDi + ")";
                 list[i].Noidi = chuyenBayModels[i].thanhPhoDen + " (" + chuyenBayModels[i].codeSanDen + ")";
                 list[i].NgayDi = chuyenBayModels[i].ngay;
                 list[i].Gioden = chuyenBayModels[i].gio + chuyenBayModels[i].thoiGianBay;
                 list[i].Giodi = chuyenBayModels[i].gio;
-                list[i].Gia = chuyenBayModels[i].donGia + " VND";
+                list[i].Gia = chuyenBayModels[i].donGia + " VNĐ";
+                list[i].Id = chuyenBayModels[i].id;
+                list[i].IdNV = model.id;
 
                 if (chuyenBayModels[i].hangVe.Equals("BambooAirline"))
                 {

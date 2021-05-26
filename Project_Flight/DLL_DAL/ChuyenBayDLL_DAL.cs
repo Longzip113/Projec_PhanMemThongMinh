@@ -34,15 +34,48 @@ namespace DLL_DAL
 
         public List<ChuyenBayModel> searchChuyenBay(ChuyenBayModel model)
         {
-            string url = "search-chuyenbay?sanBayDiId=" + model.sanBayDiId + "&sanBayDenId=" + model.sanBayDenId + "&ngayDi" + model.ngayDi + "&ngayVe" + model.ngayVe + "&loaiVe" + model.loaiVe;
-            _response = _client.GetAsync($"/{url}").Result;
-            var listModel = _response.Content.ReadAsAsync<IEnumerable<ChuyenBayModel>>().Result;
-            List<ChuyenBayModel> models = new List<ChuyenBayModel>();
-            foreach (ChuyenBayModel item in listModel)
+            ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL("chuyenbay");
+            VeChuyenBayDLL_DAL veChuyenBay = new VeChuyenBayDLL_DAL("vechuyenbay");
+
+            List<ChuyenBayModel> chuyenBayModels = chuyenBay.GetModels();
+            List<VeChuyenBayModel> veChuyenBayModels = veChuyenBay.GetModels();
+
+            List<ChuyenBayModel> result = new List<ChuyenBayModel>();
+
+            foreach (ChuyenBayModel item in chuyenBayModels)
             {
-                models.Add(item);
+                if (!item.ngay.Equals(model.ngayDi))
+                {
+                    continue;
+                }
+
+                if (item.sanBayDenId == model.sanBayDenId && item.sanBayDiId == model.sanBayDiId)
+                {
+                    foreach (VeChuyenBayModel veItem in veChuyenBayModels)
+                    {
+                        if (veItem.chuyenBayID == item.id)
+                        {
+                            item.idVe = veItem.id;
+                            if (model.loaiVe.Equals("TG") && veItem.hangVeID == 2)
+                            {
+                                item.donGia = veItem.donGia;
+                            }
+
+                            if (model.loaiVe.Equals("PT") && veItem.hangVeID == 1)
+                            {
+                                item.donGia = veItem.donGia;
+                            }
+                        }
+                    }
+
+                    if (item.donGia != null)
+                    {
+                        result.Add(item);
+                    }
+                }
             }
-            return models;
+
+            return result;
         }
 
         public String isCheckChuyenBay(List<ChuyenBayModel> listCB, ChuyenBayModel model)

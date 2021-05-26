@@ -18,6 +18,8 @@ namespace dental_sys.UseControl
             InitializeComponent();
         }
 
+        private long idNV;
+
         private string giodi;
 
         [Category("Custom Props")]
@@ -76,6 +78,16 @@ namespace dental_sys.UseControl
             set { ngayDi = value; day.Text = value; }
         }
 
+        private long id;
+        [Category("Custom Props")]
+        public long Id
+        {
+            get { return id; }
+            set { id = value; guna2Button1.Tag = value; }
+        }
+
+        public long IdNV { get => idNV; set => idNV = value; }
+
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -83,7 +95,7 @@ namespace dental_sys.UseControl
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DatVe dv = new DatVe();
+            DatVe dv = new DatVe(id, lblgia.Text, idNV);
             dv.Show();
         }
 

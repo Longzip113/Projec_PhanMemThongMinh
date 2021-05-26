@@ -39,7 +39,6 @@ C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\de
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\DLL_DAL.pdb
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.DatVe.resources
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.QuyDinhGia.resources
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.ThemChuyenBay.resources
@@ -64,3 +63,4 @@ C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\de
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.exe
 C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.pdb
+C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csproj.AssemblyReference.cache

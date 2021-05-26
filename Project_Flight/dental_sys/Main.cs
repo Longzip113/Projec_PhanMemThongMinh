@@ -27,7 +27,7 @@ namespace dental_sys
             label_val.Text = "Doanh Thu";
             guna2PictureBox_val.Image = Properties.Resources.income;
             container(new DoanhThu());
-            //nameUser.Text = model.hoTen;
+            nameUser.Text = model.hoTen;
         }
 
         private void container(object _form)
@@ -91,7 +91,7 @@ namespace dental_sys
         {
             label_val.Text = "Bán vé";
             guna2PictureBox_val.Image = Properties.Resources.dollar;
-            container(new BanVe());
+            container(new BanVe(model));
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
