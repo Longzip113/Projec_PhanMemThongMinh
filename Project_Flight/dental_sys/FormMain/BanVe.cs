@@ -86,9 +86,10 @@ namespace dental_sys
                 list[i].NgayDi = chuyenBayModels[i].ngay;
                 list[i].Gioden = chuyenBayModels[i].gio + chuyenBayModels[i].thoiGianBay;
                 list[i].Giodi = chuyenBayModels[i].gio;
-                list[i].Gia = chuyenBayModels[i].donGia + " VNĐ";
+                list[i].Gia = chuyenBayModels[i].donGia + "";
                 list[i].Id = chuyenBayModels[i].id;
                 list[i].IdNV = model.id;
+                list[i].IdVe = chuyenBayModels[i].idVe;
 
                 if (chuyenBayModels[i].hangVe.Equals("BambooAirline"))
                 {

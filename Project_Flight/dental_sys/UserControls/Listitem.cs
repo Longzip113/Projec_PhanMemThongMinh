@@ -19,7 +19,7 @@ namespace dental_sys.UseControl
         }
 
         private long idNV;
-
+        private int? idVe;
         private string giodi;
 
         [Category("Custom Props")]
@@ -87,6 +87,7 @@ namespace dental_sys.UseControl
         }
 
         public long IdNV { get => idNV; set => idNV = value; }
+        public int? IdVe { get => idVe; set => idVe = value; }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
@@ -95,7 +96,7 @@ namespace dental_sys.UseControl
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DatVe dv = new DatVe(id, lblgia.Text, idNV);
+            DatVe dv = new DatVe(id, lblgia.Text, idNV, idVe);
             dv.Show();
         }
 

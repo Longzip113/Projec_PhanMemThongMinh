@@ -51,6 +51,8 @@ namespace DLL_DAL
 
                 if (item.sanBayDenId == model.sanBayDenId && item.sanBayDiId == model.sanBayDiId)
                 {
+
+                    //Kiểm tra vé và set giá
                     foreach (VeChuyenBayModel veItem in veChuyenBayModels)
                     {
                         if (veItem.chuyenBayID == item.id)
@@ -68,6 +70,7 @@ namespace DLL_DAL
                         }
                     }
 
+                    
                     if (item.donGia != null)
                     {
                         result.Add(item);

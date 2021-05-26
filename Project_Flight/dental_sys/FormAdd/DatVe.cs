@@ -15,15 +15,19 @@ namespace dental_sys.FormAdd
     public partial class DatVe : Form
     {
         long id, idNV;
+        int? idVe;
         String gia;
         ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL("chuyenbay");
         ChuyenBayModel chuyenBayItem;
-        public DatVe(long id, String gia, long idNV)
+
+        PhieuDatVeDLL_DAL phieuDatVe = new PhieuDatVeDLL_DAL("phieudatve");
+        public DatVe(long id, String gia, long idNV, int? idVe)
         {
             InitializeComponent();
             this.id = id;
             this.gia = gia;
             this.idNV = idNV;
+            this.idVe = idVe;
         }
 
         public ChuyenBayModel findOneChuyenBay(List<ChuyenBayModel> chuyenBayModels, long id)
@@ -48,7 +52,7 @@ namespace dental_sys.FormAdd
 
             lblGioDI.Text = chuyenBayItem.gio;
             lblNgayDi.Text = chuyenBayItem.ngay;
-            lblGia.Text = "Thành tiền: " + gia;
+            lblGia.Text = "Thành tiền: " + gia + " VNĐ";
 
             if (chuyenBayItem.hangVe.Equals("BambooAirline"))
             {
@@ -77,12 +81,14 @@ namespace dental_sys.FormAdd
             phieuDatVeModel.email = txtEmail.Text;
             phieuDatVeModel.hoTen = txtHoTen.Text;
             phieuDatVeModel.soDienThoai = txtSDT.Text;
-            phieuDatVeModel.thanhTien = float.Parse(gia.Replace("", " VNĐ"));
+            phieuDatVeModel.thanhTien = float.Parse(gia);
             phieuDatVeModel.nguoiDatVe_Id = idNV;
             phieuDatVeModel.roleDatVe = 1;
-            
+            phieuDatVeModel.vechuyenbayID = idVe;
 
-
+            phieuDatVe.saveModel(phieuDatVeModel);
+            MessageBox.Show("Đặt vé thành công nhắc khách hàng kiểm tra email !!");
+            this.Close();
         }
     }
 }
