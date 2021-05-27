@@ -26,7 +26,7 @@ namespace dental_sys
             guna2ShadowForm1.SetShadowForm(this);
             label_val.Text = "Doanh Thu";
             guna2PictureBox_val.Image = Properties.Resources.income;
-            container(new DoanhThu());
+            container(new DoanhThu(model));
             nameUser.Text = model.hoTen;
         }
 
@@ -49,7 +49,7 @@ namespace dental_sys
         {
             label_val.Text = "Doanh thu";
             guna2PictureBox_val.Image = Properties.Resources.income;
-            container(new DoanhThu());
+            container(new DoanhThu(model));
         }
 
         private void guna2Button2_Click_1(object sender, EventArgs e)

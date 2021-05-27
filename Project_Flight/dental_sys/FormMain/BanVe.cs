@@ -84,9 +84,9 @@ namespace dental_sys
                 list[i].Noiden = chuyenBayModels[i].thanhPhoDi + " (" + chuyenBayModels[i].codeSanDi + ")";
                 list[i].Noidi = chuyenBayModels[i].thanhPhoDen + " (" + chuyenBayModels[i].codeSanDen + ")";
                 list[i].NgayDi = chuyenBayModels[i].ngay;
-                list[i].Gioden = chuyenBayModels[i].gio + chuyenBayModels[i].thoiGianBay;
+                list[i].Gioden = chuyenBay.xuLyNgayDen(chuyenBayModels[i].gio, chuyenBayModels[i].thoiGianBay);
                 list[i].Giodi = chuyenBayModels[i].gio;
-                list[i].Gia = chuyenBayModels[i].donGia + "";
+                list[i].Gia = chuyenBay.xuLyGia(chuyenBayModels[i].donGia + "");
                 list[i].Id = chuyenBayModels[i].id;
                 list[i].IdNV = model.id;
                 list[i].IdVe = chuyenBayModels[i].idVe;

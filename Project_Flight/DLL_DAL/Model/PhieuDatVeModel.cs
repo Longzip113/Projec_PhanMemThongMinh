@@ -9,7 +9,7 @@ namespace DLL_DAL.Model
     public class PhieuDatVeModel
     {
         private long Id;
-        private int? veChuyenBayID;
+        private long? veChuyenBayID;
         private int RoleDatVe;
         private float ThanhTien;
         private long NguoiDatVe_Id;
@@ -26,6 +26,6 @@ namespace DLL_DAL.Model
         public string cmnd { get => CMND; set => CMND = value; }
         public string soDienThoai { get => SoDienThoai; set => SoDienThoai = value; }
         public string email { get => Email; set => Email = value; }
-        public int? vechuyenbayID { get => veChuyenBayID; set => veChuyenBayID = value; }
+        public long? vechuyenbayID { get => veChuyenBayID; set => veChuyenBayID = value; }
     }
 }

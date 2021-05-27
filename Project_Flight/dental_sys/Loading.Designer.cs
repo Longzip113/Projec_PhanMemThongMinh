@@ -36,9 +36,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label_val = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CircleProgressBar1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -112,7 +112,7 @@
             this.label_val.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(186)))), ((int)(((byte)(235)))));
             this.label_val.Location = new System.Drawing.Point(276, 935);
             this.label_val.Name = "label_val";
-            this.label_val.Size = new System.Drawing.Size(126, 144);
+            this.label_val.Size = new System.Drawing.Size(110, 144);
             this.label_val.TabIndex = 2;
             this.label_val.Text = "0";
             this.label_val.Click += new System.EventHandler(this.label_val_Click);
@@ -129,11 +129,6 @@
             this.label1.Text = "Loading ...";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 50;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -145,6 +140,11 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 50;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Loading
             // 

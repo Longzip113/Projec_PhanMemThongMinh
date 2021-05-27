@@ -33,7 +33,7 @@ namespace DLL_DAL.Model
         private String HangVe;
         private String TenMayBay;
         private String LoaiVe;
-        private int? IdVe;
+        private long? IdVe;
 
         private Boolean TinhTrang;
 
@@ -58,6 +58,6 @@ namespace DLL_DAL.Model
         public long sanBayDenId { get => SanBayDenId; set => SanBayDenId = value; }
         public string ngayVe { get => NgayVe; set => NgayVe = value; }
         public string loaiVe { get => LoaiVe; set => LoaiVe = value; }
-        public int? idVe { get => IdVe; set => IdVe = value; }
+        public long? idVe { get => IdVe; set => IdVe = value; }
     }
 }

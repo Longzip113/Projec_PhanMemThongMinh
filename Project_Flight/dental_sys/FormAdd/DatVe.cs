@@ -15,13 +15,13 @@ namespace dental_sys.FormAdd
     public partial class DatVe : Form
     {
         long id, idNV;
-        int? idVe;
+        long? idVe;
         String gia;
         ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL("chuyenbay");
         ChuyenBayModel chuyenBayItem;
 
         PhieuDatVeDLL_DAL phieuDatVe = new PhieuDatVeDLL_DAL("phieudatve");
-        public DatVe(long id, String gia, long idNV, int? idVe)
+        public DatVe(long id, String gia, long idNV, long? idVe)
         {
             InitializeComponent();
             this.id = id;
@@ -30,27 +30,17 @@ namespace dental_sys.FormAdd
             this.idVe = idVe;
         }
 
-        public ChuyenBayModel findOneChuyenBay(List<ChuyenBayModel> chuyenBayModels, long id)
-        {
-            foreach(ChuyenBayModel item in chuyenBayModels)
-            {
-                if(item.id == id)
-                {
-                    return item;
-                }
-            }
-            return null;
-        }
-
         private void DatVe_Load(object sender, EventArgs e)
         {
             List<ChuyenBayModel> chuyenBayModels = chuyenBay.GetModels();
-            chuyenBayItem = findOneChuyenBay(chuyenBayModels, id);
+            chuyenBayItem = chuyenBay.findOneChuyenBayById(chuyenBayModels, id);
 
             lblnoidi.Text = chuyenBayItem.thanhPhoDi;
             lblnoiden.Text = chuyenBayItem.thanhPhoDen;
 
             lblGioDI.Text = chuyenBayItem.gio;
+            lblgioden.Text = chuyenBay.xuLyNgayDen(chuyenBayItem.gio, chuyenBayItem.thoiGianBay);
+
             lblNgayDi.Text = chuyenBayItem.ngay;
             lblGia.Text = "Thành tiền: " + gia + " VNĐ";
 

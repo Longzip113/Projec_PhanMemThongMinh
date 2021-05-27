@@ -20,9 +20,11 @@ namespace dental_sys.UserControls
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            QuyDinhGia qd = new QuyDinhGia();
+            QuyDinhGia qd = new QuyDinhGia(id);
             qd.Show();
         }
+
+        private long id;
 
         private string giodi;
 
@@ -73,5 +75,7 @@ namespace dental_sys.UserControls
             get { return ngayDi; }
             set { ngayDi = value; day.Text = value; }
         }
+
+        public long Id { get => id; set => id = value; }
     }
 }

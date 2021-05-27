@@ -7,7 +7,7 @@ using DLL_DAL.Model;
 
 namespace DLL_DAL
 {
-    class VeChuyenBayDLL_DAL : AbstractDLL_DAL<VeChuyenBayModel>
+    public class VeChuyenBayDLL_DAL : AbstractDLL_DAL<VeChuyenBayModel>
     {
         public VeChuyenBayDLL_DAL(String url) : base(url)
         { }

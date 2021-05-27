@@ -8,14 +8,14 @@ namespace DLL_DAL.Model
 {
     public class VeChuyenBayModel
     {
-        int Id;
+        long Id;
         float DonGia;
-        int ChuyenBayId;
-        int HangVeId;
+        long ChuyenBayId;
+        long HangVeId;
 
-        public int id { get => Id; set => Id = value; }
+        public long id { get => Id; set => Id = value; }
         public float donGia { get => DonGia; set => DonGia = value; }
-        public int chuyenBayID { get => ChuyenBayId; set => ChuyenBayId = value; }
-        public int hangVeID { get => HangVeId; set => HangVeId = value; }
+        public long chuyenBayID { get => ChuyenBayId; set => ChuyenBayId = value; }
+        public long hangVeID { get => HangVeId; set => HangVeId = value; }
     }
 }

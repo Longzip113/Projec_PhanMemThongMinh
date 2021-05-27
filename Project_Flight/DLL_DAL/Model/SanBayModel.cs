@@ -8,14 +8,14 @@ namespace DLL_DAL.Model
 {
     public class SanBayModel
     {
-		private int Id;
+		private long Id;
 		private String Code;
 		private String TenThanhPho;
 		private String TenSanBay;
 		private String QuocGia;
 		private Boolean TinhTrang;
 
-        public int id { get => Id; set => Id = value; }
+        public long id { get => Id; set => Id = value; }
         public string code { get => Code; set => Code = value; }
         public string tenThanhPho { get => TenThanhPho; set => TenThanhPho = value; }
         public string tenSanBay { get => TenSanBay; set => TenSanBay = value; }

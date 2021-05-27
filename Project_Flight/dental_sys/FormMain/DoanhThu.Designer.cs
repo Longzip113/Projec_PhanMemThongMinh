@@ -30,58 +30,58 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoanhThu));
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel45 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtUSER = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel44 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblDT = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblSLVe = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.lblSLNV = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.lblgia = new System.Windows.Forms.Label();
+            this.lblNVTOP = new System.Windows.Forms.Label();
             this.guna2Panel7.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(769, 311);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(106, 32);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(146, 31);
             this.guna2HtmlLabel7.TabIndex = 89;
             this.guna2HtmlLabel7.Text = "TOP BÁN VÉ";
             // 
-            // guna2HtmlLabel45
+            // txtUSER
             // 
-            this.guna2HtmlLabel45.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel45.Font = new System.Drawing.Font("Gadugi", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel45.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel45.Location = new System.Drawing.Point(110, 17);
-            this.guna2HtmlLabel45.Name = "guna2HtmlLabel45";
-            this.guna2HtmlLabel45.Size = new System.Drawing.Size(121, 26);
-            this.guna2HtmlLabel45.TabIndex = 6;
-            this.guna2HtmlLabel45.Text = "Long Nguyễn";
+            this.txtUSER.BackColor = System.Drawing.Color.Transparent;
+            this.txtUSER.Font = new System.Drawing.Font("Gadugi", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUSER.ForeColor = System.Drawing.Color.White;
+            this.txtUSER.Location = new System.Drawing.Point(110, 17);
+            this.txtUSER.Name = "txtUSER";
+            this.txtUSER.Size = new System.Drawing.Size(121, 26);
+            this.txtUSER.TabIndex = 6;
+            this.txtUSER.Text = "Long Nguyễn";
             // 
             // guna2HtmlLabel44
             // 
@@ -174,60 +174,70 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "TỔNG VÉ BÁN";
             // 
-            // label5
+            // lblDT
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(9, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 21);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "200,000,000 VNĐ";
+            this.lblDT.AutoSize = true;
+            this.lblDT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDT.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblDT.Location = new System.Drawing.Point(9, 44);
+            this.lblDT.Name = "lblDT";
+            this.lblDT.Size = new System.Drawing.Size(139, 21);
+            this.lblDT.TabIndex = 4;
+            this.lblDT.Text = "200,000,000 VNĐ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(3, 29);
+            this.label4.Location = new System.Drawing.Point(14, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 15);
+            this.label4.Size = new System.Drawing.Size(79, 15);
             this.label4.TabIndex = 0;
-            this.label4.Text = "DOANH THU TRONG NGÀY";
+            this.label4.Text = "DOANH THU";
             // 
-            // label8
+            // lblSLVe
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label8.Location = new System.Drawing.Point(3, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 46);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "250";
+            this.lblSLVe.AutoSize = true;
+            this.lblSLVe.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.lblSLVe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSLVe.Location = new System.Drawing.Point(3, 29);
+            this.lblSLVe.Name = "lblSLVe";
+            this.lblSLVe.Size = new System.Drawing.Size(80, 46);
+            this.lblSLVe.TabIndex = 4;
+            this.lblSLVe.Text = "250";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.panel5.Controls.Add(this.pictureBox9);
-            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.lblSLVe);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Location = new System.Drawing.Point(378, 70);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(250, 110);
             this.panel5.TabIndex = 86;
             // 
-            // label11
+            // pictureBox9
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label11.Location = new System.Drawing.Point(3, 29);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 46);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "120";
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(157, 13);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(87, 81);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 6;
+            this.pictureBox9.TabStop = false;
+            // 
+            // lblSLNV
+            // 
+            this.lblSLNV.AutoSize = true;
+            this.lblSLNV.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.lblSLNV.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSLNV.Location = new System.Drawing.Point(3, 29);
+            this.lblSLNV.Name = "lblSLNV";
+            this.lblSLNV.Size = new System.Drawing.Size(80, 46);
+            this.lblSLNV.TabIndex = 4;
+            this.lblSLNV.Text = "120";
             // 
             // label12
             // 
@@ -244,7 +254,7 @@
             // 
             this.guna2Panel3.Controls.Add(this.guna2Panel7);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel3.Controls.Add(this.guna2HtmlLabel45);
+            this.guna2Panel3.Controls.Add(this.txtUSER);
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel44);
             this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
             this.guna2Panel3.Location = new System.Drawing.Point(52, 274);
@@ -252,38 +262,6 @@
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(576, 358);
             this.guna2Panel3.TabIndex = 88;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
-            this.panel6.Controls.Add(this.pictureBox10);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Location = new System.Drawing.Point(701, 70);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 110);
-            this.panel6.TabIndex = 87;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.panel4.Controls.Add(this.pictureBox8);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(55, 70);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(250, 110);
-            this.panel4.TabIndex = 85;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(157, 13);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(87, 81);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
             // 
             // guna2PictureBox1
             // 
@@ -295,6 +273,17 @@
             this.guna2PictureBox1.TabIndex = 8;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.panel6.Controls.Add(this.pictureBox10);
+            this.panel6.Controls.Add(this.lblSLNV);
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Location = new System.Drawing.Point(701, 70);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(250, 110);
+            this.panel6.TabIndex = 87;
+            // 
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
@@ -304,6 +293,17 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 6;
             this.pictureBox10.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel4.Controls.Add(this.pictureBox8);
+            this.panel4.Controls.Add(this.lblDT);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Location = new System.Drawing.Point(55, 70);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(250, 110);
+            this.panel4.TabIndex = 85;
             // 
             // pictureBox8
             // 
@@ -315,15 +315,15 @@
             this.pictureBox8.TabIndex = 6;
             this.pictureBox8.TabStop = false;
             // 
-            // lblgia
+            // lblNVTOP
             // 
-            this.lblgia.AutoSize = true;
-            this.lblgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgia.Location = new System.Drawing.Point(805, 365);
-            this.lblgia.Name = "lblgia";
-            this.lblgia.Size = new System.Drawing.Size(162, 16);
-            this.lblgia.TabIndex = 93;
-            this.lblgia.Text = "1. Nguyễn Thành Long";
+            this.lblNVTOP.AutoSize = true;
+            this.lblNVTOP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNVTOP.Location = new System.Drawing.Point(805, 365);
+            this.lblNVTOP.Name = "lblNVTOP";
+            this.lblNVTOP.Size = new System.Drawing.Size(162, 16);
+            this.lblNVTOP.TabIndex = 93;
+            this.lblNVTOP.Text = "1. Nguyễn Thành Long";
             // 
             // DoanhThu
             // 
@@ -331,7 +331,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1011, 701);
-            this.Controls.Add(this.lblgia);
+            this.Controls.Add(this.lblNVTOP);
             this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.guna2Panel3);
@@ -340,18 +340,19 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DoanhThu";
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.DoanhThu_Load);
             this.guna2Panel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -362,7 +363,7 @@
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel45;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtUSER;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel44;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
@@ -370,18 +371,18 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblDT;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblSLVe;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblSLNV;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblgia;
+        private System.Windows.Forms.Label lblNVTOP;
 
     }
 }

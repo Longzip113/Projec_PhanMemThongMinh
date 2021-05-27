@@ -32,6 +32,44 @@ namespace DLL_DAL
             return null;
         }
 
+        public ChuyenBayModel findOneChuyenBayById(List<ChuyenBayModel> chuyenBayModels, long id)
+        {
+            foreach (ChuyenBayModel item in chuyenBayModels)
+            {
+                if (item.id == id)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public List<ChuyenBayModel> findChuyenBayByVe()
+        {
+            VeChuyenBayDLL_DAL veChuyenBay = new VeChuyenBayDLL_DAL("vechuyenbay");
+            List<VeChuyenBayModel> veChuyenBayModels = veChuyenBay.GetModels();
+            List<ChuyenBayModel> chuyenBayModels = GetModels();
+            List<ChuyenBayModel> result = new List<ChuyenBayModel>();
+
+            foreach (ChuyenBayModel item in chuyenBayModels)
+            {
+                Boolean check = true;
+                foreach (VeChuyenBayModel itemVe in veChuyenBayModels)
+                {
+                    if (item.id == itemVe.chuyenBayID)
+                    {
+                        check = false;
+                        break;
+                    }
+                }
+                if (check)
+                {
+                    result.Add(item);
+                }
+            }
+            return result;
+        }
+
         public List<ChuyenBayModel> searchChuyenBay(ChuyenBayModel model)
         {
             ChuyenBayDLL_DAL chuyenBay = new ChuyenBayDLL_DAL("chuyenbay");
@@ -70,7 +108,7 @@ namespace DLL_DAL
                         }
                     }
 
-                    
+
                     if (item.donGia != null)
                     {
                         result.Add(item);
@@ -97,6 +135,42 @@ namespace DLL_DAL
             }
 
             return null;
+        }
+
+        public String xuLyPhut(int phut)
+        {
+            string result = "";
+
+            if (phut < 10)
+            {
+                result += ":0" + phut;
+            }
+            else
+            {
+                result += ":" + phut;
+            }
+
+            return result;
+        }
+
+        public String xuLyNgayDen(String time, float gioBay)
+        {
+            string[] times = time.Split(':');
+            int phut = int.Parse(times[1]);
+            int gio = int.Parse(times[0]);
+            float gioDi = gio + gioBay;
+            string result;
+
+            // xu ly gio
+            if (gioDi > 24)
+            {
+                result = gioDi - 24 + "";
+            }
+            else
+            {
+                result = gioDi + "";
+            }
+            return result + xuLyPhut(phut);
         }
     }
 }
