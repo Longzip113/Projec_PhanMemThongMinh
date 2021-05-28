@@ -49,6 +49,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -56,6 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // image
@@ -402,12 +404,25 @@
             this.guna2TextBox5.TabIndex = 89;
             this.guna2TextBox5.TextOffset = new System.Drawing.Point(5, 0);
             // 
+            // guna2PictureBox6
+            // 
+            this.guna2PictureBox6.Image = global::dental_sys.Properties.Resources.note;
+            this.guna2PictureBox6.Location = new System.Drawing.Point(173, 474);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
+            this.guna2PictureBox6.Size = new System.Drawing.Size(99, 60);
+            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox6.TabIndex = 90;
+            this.guna2PictureBox6.TabStop = false;
+            // 
             // DatVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(973, 677);
+            this.Controls.Add(this.guna2PictureBox6);
             this.Controls.Add(this.guna2TextBox5);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label3);
@@ -434,6 +449,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -461,5 +477,6 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
     }
 }
