@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dental_sys.FormMain;
 using DLL_DAL.Model;
 
 namespace dental_sys
@@ -26,8 +27,8 @@ namespace dental_sys
             guna2ShadowForm1.SetShadowForm(this);
             label_val.Text = "Doanh Thu";
             guna2PictureBox_val.Image = Properties.Resources.income;
-            container(new DoanhThu());
-            //nameUser.Text = model.hoTen;
+            container(new DoanhThu(model));
+            nameUser.Text = model.hoTen;
         }
 
         private void container(object _form)
@@ -49,7 +50,7 @@ namespace dental_sys
         {
             label_val.Text = "Doanh thu";
             guna2PictureBox_val.Image = Properties.Resources.income;
-            container(new DoanhThu());
+            container(new DoanhThu(model));
         }
 
         private void guna2Button2_Click_1(object sender, EventArgs e)
@@ -91,7 +92,7 @@ namespace dental_sys
         {
             label_val.Text = "Bán vé";
             guna2PictureBox_val.Image = Properties.Resources.dollar;
-            container(new BanVe());
+            container(new BanVe(model));
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
@@ -99,6 +100,27 @@ namespace dental_sys
             Login fmLogin = new Login();
             this.Hide();
             fmLogin.Show();
+        }
+
+        private void guna2Button12_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Xem vé";
+            guna2PictureBox_val.Image = Properties.Resources.dollar;
+            container(new XemVe());
+        }
+
+        private void guna2Button10_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Khách hàng";
+            guna2PictureBox_val.Image = Properties.Resources.dollar;
+            container(new KhachHang());
+        }
+
+        private void guna2Button11_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Tư vấn";
+            guna2PictureBox_val.Image = Properties.Resources.dollar;
+            container(new TuVan());
         }
     }
 }

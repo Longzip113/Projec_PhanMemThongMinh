@@ -111,6 +111,24 @@
     <Compile Include="FormAdd\ThemTuyenBay.Designer.cs">
       <DependentUpon>ThemTuyenBay.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMain\KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain\KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain\TuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain\TuVan.Designer.cs">
+      <DependentUpon>TuVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain\XemVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain\XemVe.Designer.cs">
+      <DependentUpon>XemVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +214,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdd\ThemTuyenBay.resx">
       <DependentUpon>ThemTuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain\KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain\TuVan.resx">
+      <DependentUpon>TuVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain\XemVe.resx">
+      <DependentUpon>XemVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

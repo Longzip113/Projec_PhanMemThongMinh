@@ -46,6 +46,36 @@ namespace DLL_DAL
             return null;
         }
 
+        public float getDoanhThu(long id, List<PhieuDatVeModel> listPDV,ref int sl)
+        {
+            float total = 0;
+            foreach (PhieuDatVeModel item in listPDV)
+            {
+                if(item.roleDatVe == 1 && item.nguoiDatVe_Id == id)
+                {
+                    total += item.thanhTien;
+                    sl++;
+                }
+            }
+            return total;
+        }
+
+        public List<NhanVienModel> findAll()
+        {
+            List<NhanVienModel> nhanVienModels = GetModels();
+            PhieuDatVeDLL_DAL phieuDatVe = new PhieuDatVeDLL_DAL("phieudatve");
+            List<PhieuDatVeModel> phieuDatVeModels = phieuDatVe.GetModels();
+
+            foreach(NhanVienModel item in nhanVienModels)
+            {
+                int sl = 0;
+                item.TongDoanhThu = getDoanhThu(item.id, phieuDatVeModels,ref sl);
+                item.SoVeBan = sl;
+            }
+
+            return nhanVienModels;
+        }
+
         public String isCheckNhanVien(List<NhanVienModel> listNV, NhanVienModel model)
         {
             foreach (NhanVienModel item in listNV)

@@ -24,18 +24,19 @@ namespace dental_sys
 
         private void loadItem()
         {
-            List<ChuyenBayModel> chuyenBayModels = chuyenBay.GetModels();
+            List<ChuyenBayModel> chuyenBayModels = chuyenBay.findChuyenBayByVe();
 
             itemdatve[] list = new itemdatve[chuyenBayModels.Count];
 
             for (int i = 0; i < chuyenBayModels.Count; i++)
             {
                 list[i] = new itemdatve();
-                list[i].Noiden = chuyenBayModels[i].thanhPhoDi +" (" + chuyenBayModels[i].codeSanDi + ")"; //"Hồ Chí Minh (SGN)";
+                list[i].Noiden = chuyenBayModels[i].thanhPhoDi +" (" + chuyenBayModels[i].codeSanDi + ")"; 
                 list[i].Noidi = chuyenBayModels[i].thanhPhoDen + " (" + chuyenBayModels[i].codeSanDen + ")";
                 list[i].NgayDi = chuyenBayModels[i].ngay;
-                //list[i].Gioden = int.Parse(chuyenBayModels[i].gio) + chuyenBayModels[i].thoiGianBay + "";
                 list[i].Giodi = chuyenBayModels[i].gio;
+                list[i].Id = chuyenBayModels[i].id;
+                list[i].Gioden = chuyenBay.xuLyNgayDen(chuyenBayModels[i].gio, chuyenBayModels[i].thoiGianBay);
 
                 if (chuyenBayModels[i].hangVe.Equals("BambooAirline"))
                 {

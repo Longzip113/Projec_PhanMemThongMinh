@@ -121,6 +121,7 @@ namespace dental_sys.FormAdd
 
         }
 
+
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             ChuyenBayModel chuyenBayModel = new ChuyenBayModel();
@@ -134,10 +135,9 @@ namespace dental_sys.FormAdd
             chuyenBayModel.mayBayId = mayBayItem.id;
             chuyenBayModel.tuyenBayId = tuyenBayItem.id;
             chuyenBayModel.thoiGianBay = float.Parse(guna2TextBox1.Text);
-            chuyenBayModel.gio = guna2ComboBox5.SelectedItem.ToString() + ":" + guna2ComboBox2.SelectedItem.ToString();
+            chuyenBayModel.gio = guna2ComboBox5.SelectedItem.ToString() + chuyenBay.xuLyPhut(int.Parse(guna2ComboBox2.SelectedItem.ToString()));
             chuyenBayModel.ngay = time.ToString(format);
             chuyenBayModel.tinhTrang = true;
-
             
             if(guna2Button2.Text.Equals("Sửa"))
             {

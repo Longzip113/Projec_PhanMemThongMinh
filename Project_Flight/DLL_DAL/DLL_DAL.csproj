@@ -49,18 +49,22 @@
   <ItemGroup>
     <Compile Include="AbstractDLL_DAL.cs" />
     <Compile Include="ChuyenBayDLL_DAL.cs" />
+    <Compile Include="KhachHangDLL_DAL.cs" />
     <Compile Include="MayBayDLL_DAL.cs" />
     <Compile Include="Model\ChuyenBayModel.cs" />
+    <Compile Include="Model\KhachHangModel.cs" />
     <Compile Include="Model\MayBayModel.cs" />
     <Compile Include="Model\PhieuDatVeModel.cs" />
     <Compile Include="Model\SanBayModel.cs" />
     <Compile Include="Model\TuyenBayModel.cs" />
     <Compile Include="Model\NhanVienModel.cs" />
+    <Compile Include="Model\VeChuyenBayModel.cs" />
     <Compile Include="NhanVienDLL_DAL.cs" />
     <Compile Include="PhieuDatVeDLL_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanBayDLL_DAL.cs" />
     <Compile Include="TuyenBayDLL_DAL.cs" />
+    <Compile Include="VeChuyenBayDLL_DAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -72,5 +72,19 @@ namespace DLL_DAL
                 return false;
             }
         }
+
+        public String xuLyGia(String gia)
+        {
+            int lenght = gia.Length;
+            int sl = lenght / 3;
+            int index = 3;
+            for (int i = 1; i <= sl; i++)
+            {
+                gia = gia.Insert(lenght - index, ",");
+                index = 3 * (i + 1);
+            }
+            return gia;
+        }
+
     }
 }

@@ -25,7 +25,7 @@ namespace dental_sys
 
         private void Patient_Load(object sender, EventArgs e)
         {
-            listNV = nhanVien.GetModels();
+            listNV = nhanVien.findAll();
             guna2DataGridView1.Rows.Add(listNV.Count);
             slNV.Text = listNV.Count() + "";
 
@@ -37,7 +37,7 @@ namespace dental_sys
                 guna2DataGridView1.Rows[i].Cells[3].Value = listNV[i].cmnd; //"30286654";
                 guna2DataGridView1.Rows[i].Cells[4].Value = listNV[i].taiKhoan; //"Longzip113";
                 guna2DataGridView1.Rows[i].Cells[5].Value = listNV[i].SoVeBan; //"100";
-                guna2DataGridView1.Rows[i].Cells[6].Value = listNV[i].TongDoanhThu; //"100,000,000";
+                guna2DataGridView1.Rows[i].Cells[6].Value = nhanVien.xuLyGia(listNV[i].TongDoanhThu + ""); //"100,000,000";
             }
         }
 
