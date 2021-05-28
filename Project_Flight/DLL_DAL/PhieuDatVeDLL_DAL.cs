@@ -15,5 +15,6 @@ namespace DLL_DAL
         public PhieuDatVeDLL_DAL(String url) : base(url)
         {
         }
+
     }
 }

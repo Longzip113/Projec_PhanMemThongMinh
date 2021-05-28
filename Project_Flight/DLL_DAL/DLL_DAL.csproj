@@ -49,8 +49,10 @@
   <ItemGroup>
     <Compile Include="AbstractDLL_DAL.cs" />
     <Compile Include="ChuyenBayDLL_DAL.cs" />
+    <Compile Include="KhachHangDLL_DAL.cs" />
     <Compile Include="MayBayDLL_DAL.cs" />
     <Compile Include="Model\ChuyenBayModel.cs" />
+    <Compile Include="Model\KhachHangModel.cs" />
     <Compile Include="Model\MayBayModel.cs" />
     <Compile Include="Model\PhieuDatVeModel.cs" />
     <Compile Include="Model\SanBayModel.cs" />

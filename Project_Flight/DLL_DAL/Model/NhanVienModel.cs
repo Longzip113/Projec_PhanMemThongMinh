@@ -17,6 +17,7 @@ namespace DLL_DAL.Model
         private String MatKhau;
         private Boolean TinhTrang;
         private String Cmnd;
+        private String Email;
         private int soVeBan;
         private float tongDoanhThu;
 
@@ -30,5 +31,6 @@ namespace DLL_DAL.Model
         public string cmnd { get => Cmnd; set => Cmnd = value; }
         public int SoVeBan { get => soVeBan; set => soVeBan = value; }
         public float TongDoanhThu { get => tongDoanhThu; set => tongDoanhThu = value; }
+        public string email { get => Email; set => Email = value; }
     }
 }

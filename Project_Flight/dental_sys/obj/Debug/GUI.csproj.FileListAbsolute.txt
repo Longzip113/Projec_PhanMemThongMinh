@@ -98,3 +98,6 @@ C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flig
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.exe
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.pdb
+C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormMain.KhachHang.resources
+C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormMain.TuVan.resources
+C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormMain.XemVe.resources

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dental_sys.FormMain;
 using DLL_DAL.Model;
 
 namespace dental_sys
@@ -99,6 +100,27 @@ namespace dental_sys
             Login fmLogin = new Login();
             this.Hide();
             fmLogin.Show();
+        }
+
+        private void guna2Button12_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Xem vé";
+            guna2PictureBox_val.Image = Properties.Resources.dollar;
+            container(new XemVe());
+        }
+
+        private void guna2Button10_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Khách hàng";
+            guna2PictureBox_val.Image = Properties.Resources.dollar;
+            container(new KhachHang());
+        }
+
+        private void guna2Button11_Click(object sender, EventArgs e)
+        {
+            label_val.Text = "Tư vấn";
+            guna2PictureBox_val.Image = Properties.Resources.dollar;
+            container(new TuVan());
         }
     }
 }

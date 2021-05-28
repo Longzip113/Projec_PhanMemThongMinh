@@ -76,6 +76,10 @@ namespace dental_sys.FormAdd
             phieuDatVeModel.roleDatVe = 1;
             phieuDatVeModel.vechuyenbayID = idVe;
 
+            DateTime time = DateTime.Now;
+            string format = "yyyy-MM-dd";
+            phieuDatVeModel.ngayDat = time.ToString(format);
+
             phieuDatVe.saveModel(phieuDatVeModel);
             MessageBox.Show("Đặt vé thành công nhắc khách hàng kiểm tra email !!");
             this.Close();
