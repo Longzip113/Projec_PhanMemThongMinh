@@ -84,7 +84,8 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(12, 69);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(24, 133);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -99,7 +100,7 @@
             this.guna2DataGridView1.RowTemplate.DividerHeight = 5;
             this.guna2DataGridView1.RowTemplate.Height = 40;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(987, 574);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1974, 1104);
             this.guna2DataGridView1.TabIndex = 16;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -173,9 +174,10 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1008, 61);
+            this.guna2Panel1.Size = new System.Drawing.Size(2016, 117);
             this.guna2Panel1.TabIndex = 13;
             // 
             // guna2Button1
@@ -189,10 +191,11 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(878, 3);
+            this.guna2Button1.Location = new System.Drawing.Point(1756, 6);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(100, 47);
+            this.guna2Button1.Size = new System.Drawing.Size(200, 90);
             this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "Thêm sân bay";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -201,9 +204,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F);
-            this.label2.Location = new System.Drawing.Point(56, 24);
+            this.label2.Location = new System.Drawing.Point(112, 46);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 18);
+            this.label2.Size = new System.Drawing.Size(109, 34);
             this.label2.TabIndex = 1;
             this.label2.Text = "Sân bay";
             // 
@@ -212,11 +216,12 @@
             this.slSB.AutoSize = true;
             this.slSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
             this.slSB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.slSB.Location = new System.Drawing.Point(17, 12);
+            this.slSB.Location = new System.Drawing.Point(34, 23);
+            this.slSB.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.slSB.Name = "slSB";
-            this.slSB.Size = new System.Drawing.Size(33, 36);
+            this.slSB.Size = new System.Drawing.Size(63, 67);
             this.slSB.TabIndex = 0;
-            this.slSB.Text = "2";
+            this.slSB.Text = "0";
             // 
             // guna2Button5
             // 
@@ -231,10 +236,11 @@
             this.guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(790, 649);
+            this.guna2Button5.Location = new System.Drawing.Point(1580, 1248);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(84, 30);
+            this.guna2Button5.Size = new System.Drawing.Size(168, 58);
             this.guna2Button5.TabIndex = 15;
             this.guna2Button5.Text = "Xóa";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
@@ -252,26 +258,27 @@
             this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(880, 649);
+            this.guna2Button4.Location = new System.Drawing.Point(1760, 1248);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(84, 30);
+            this.guna2Button4.Size = new System.Drawing.Size(168, 58);
             this.guna2Button4.TabIndex = 14;
             this.guna2Button4.Text = "Sửa";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // SanBay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1008, 685);
+            this.ClientSize = new System.Drawing.Size(2016, 1317);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SanBay";
             this.Text = "SanBay";
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();

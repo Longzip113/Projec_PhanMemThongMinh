@@ -42,8 +42,8 @@ namespace dental_sys.FormAdd
             List<ChuyenBayModel> chuyenBayModels = chuyenBay.GetModels();
             chuyenBayItem = chuyenBay.findOneChuyenBayById(chuyenBayModels, id);
 
-            lblnoidi.Text = chuyenBayItem.thanhPhoDi;
-            lblnoiden.Text = chuyenBayItem.thanhPhoDen;
+            lblnoidi.Text = chuyenBayItem.thanhPhoDi + " (" + chuyenBayItem.codeSanDi + ")";
+            lblnoiden.Text = chuyenBayItem.thanhPhoDen + " (" + chuyenBayItem.codeSanDen + ")"; ;
 
             lblGioDI.Text = chuyenBayItem.gio;
             lblgioden.Text = chuyenBay.xuLyNgayDen(chuyenBayItem.gio, chuyenBayItem.thoiGianBay);
