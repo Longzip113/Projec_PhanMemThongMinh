@@ -19,7 +19,7 @@ namespace DLL_DAL.Model
         private String Cmnd;
         private String Email;
         private int soVeBan;
-        private float tongDoanhThu;
+        private Double tongDoanhThu;
 
         public long id { get => Id; set => Id = value; }
         public long chucVuID { get => ChucVuID; set => ChucVuID = value; }
@@ -30,7 +30,7 @@ namespace DLL_DAL.Model
         public Boolean tinhTrang { get => TinhTrang; set => TinhTrang = value; }
         public string cmnd { get => Cmnd; set => Cmnd = value; }
         public int SoVeBan { get => soVeBan; set => soVeBan = value; }
-        public float TongDoanhThu { get => tongDoanhThu; set => tongDoanhThu = value; }
+        public Double TongDoanhThu { get => tongDoanhThu; set => tongDoanhThu = value; }
         public string email { get => Email; set => Email = value; }
     }
 }

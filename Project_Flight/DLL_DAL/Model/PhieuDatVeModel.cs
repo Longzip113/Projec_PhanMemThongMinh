@@ -12,7 +12,7 @@ namespace DLL_DAL.Model
         private long? veChuyenBayID;
         private long khachHangID1;
         private int RoleDatVe;
-        private float ThanhTien;
+        private Double ThanhTien;
         private long NguoiDatVe_Id;
 
         private String NgayDat1;
@@ -27,8 +27,8 @@ namespace DLL_DAL.Model
 
         public long id { get => Id; set => Id = value; }
         public int roleDatVe { get => RoleDatVe; set => RoleDatVe = value; }
-        public float thanhTien { get => ThanhTien; set => ThanhTien = value; }
-        public long nguoiDatVe_Id { get => NguoiDatVe_Id; set => NguoiDatVe_Id = value; }
+        public Double thanhTien { get => ThanhTien; set => ThanhTien = value; }
+        public long nguoiDatVe_id { get => NguoiDatVe_Id; set => NguoiDatVe_Id = value; }
         public string hoTen { get => HoTen; set => HoTen = value; }
         public string cmnd { get => CMND; set => CMND = value; }
         public string soDienThoai { get => SoDienThoai; set => SoDienThoai = value; }

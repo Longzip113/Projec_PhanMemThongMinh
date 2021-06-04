@@ -46,12 +46,12 @@ namespace DLL_DAL
             return null;
         }
 
-        public float getDoanhThu(long id, List<PhieuDatVeModel> listPDV,ref int sl)
+        public Double getDoanhThu(long id, List<PhieuDatVeModel> listPDV,ref int sl)
         {
-            float total = 0;
+            Double total = 0;
             foreach (PhieuDatVeModel item in listPDV)
             {
-                if(item.roleDatVe == 1 && item.nguoiDatVe_Id == id)
+                if(item.roleDatVe == 1 && item.nguoiDatVe_id == id)
                 {
                     total += item.thanhTien;
                     sl++;
@@ -111,7 +111,7 @@ namespace DLL_DAL
             {
                 if(item.roleDatVe == 1)
                 {
-                    if(item.nguoiDatVe_Id == id)
+                    if(item.nguoiDatVe_id == id)
                     {
                         return "Nhân viên đã có tên trong phiếu đặt vé không thể xóa được !!";
                     }

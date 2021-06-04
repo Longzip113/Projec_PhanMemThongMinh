@@ -21,6 +21,12 @@ namespace dental_sys.FormAdd
         ChuyenBayModel chuyenBayItem;
 
         PhieuDatVeDLL_DAL phieuDatVe = new PhieuDatVeDLL_DAL("phieudatve");
+
+        KhachHangDLL_DAL khachHang = new KhachHangDLL_DAL("khachhang");
+        List<KhachHangModel> listKH;
+
+        bool check = false;
+
         public DatVe(long id, String gia, long idNV, long? idVe)
         {
             InitializeComponent();
@@ -28,6 +34,7 @@ namespace dental_sys.FormAdd
             this.gia = gia;
             this.idNV = idNV;
             this.idVe = idVe;
+            listKH = khachHang.GetModels();
         }
 
         private void DatVe_Load(object sender, EventArgs e)
@@ -64,6 +71,24 @@ namespace dental_sys.FormAdd
             this.Close();
         }
 
+        private void rdTV_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rdTV.Checked == true)
+            {
+                txtEmail.Enabled = false;
+                txtHoTen.Enabled = false;
+                txtSDT.Enabled = false;
+                check = true;
+            }
+            else
+            {
+                txtEmail.Enabled = true;
+                txtHoTen.Enabled = true;
+                txtSDT.Enabled = true;
+                check = false;
+            }
+        }
+
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             PhieuDatVeModel phieuDatVeModel = new PhieuDatVeModel();
@@ -72,17 +97,39 @@ namespace dental_sys.FormAdd
             phieuDatVeModel.hoTen = txtHoTen.Text;
             phieuDatVeModel.soDienThoai = txtSDT.Text;
             phieuDatVeModel.thanhTien = float.Parse(gia);
-            phieuDatVeModel.nguoiDatVe_Id = idNV;
+            phieuDatVeModel.nguoiDatVe_id = idNV;
             phieuDatVeModel.roleDatVe = 1;
             phieuDatVeModel.vechuyenbayID = idVe;
 
             DateTime time = DateTime.Now;
             string format = "yyyy-MM-dd";
             phieuDatVeModel.ngayDat = time.ToString(format);
-
-            phieuDatVe.saveModel(phieuDatVeModel);
-            MessageBox.Show("Đặt vé thành công nhắc khách hàng kiểm tra email !!");
-            this.Close();
+            if (check)
+            {
+                if (phieuDatVe.checkKhachHang(listKH, phieuDatVeModel.cmnd, check))
+                {
+                    phieuDatVe.saveModel(phieuDatVeModel);
+                    MessageBox.Show("Đặt vé thành công nhắc khách hàng kiểm tra email !!");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Khong co khach hang thanh vien voi cmnd nay xin kiem tra lai !!");
+                }
+            }
+            else
+            {
+                if (phieuDatVe.checkKhachHang(listKH, phieuDatVeModel.cmnd, check))
+                {
+                    phieuDatVe.saveModel(phieuDatVeModel);
+                    MessageBox.Show("Đặt vé thành công nhắc khách hàng kiểm tra email !!");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("CMND nay la cua khach hang thanh vien xin kiem tra lai");
+                }
+            }
         }
     }
 }

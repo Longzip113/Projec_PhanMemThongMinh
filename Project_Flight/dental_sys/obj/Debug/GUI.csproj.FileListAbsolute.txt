@@ -67,13 +67,11 @@ C:\Users\Administrator\Desktop\Project\Projec_PhanMemThongMinh\Project_Flight\de
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.exe.config
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.exe
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\dental_sys.pdb
-C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\DLL_DAL.dll
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\System.Net.Http.Formatting.dll
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\DLL_DAL.pdb
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csprojAssemblyReference.cache
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.DatVe.resources
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.QuyDinhGia.resources
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormAdd.ThemChuyenBay.resources
@@ -101,3 +99,5 @@ C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flig
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormMain.KhachHang.resources
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormMain.TuVan.resources
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\dental_sys.FormMain.XemVe.resources
+C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\bin\Debug\DLL_DAL.dll
+C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\dental_sys\obj\Debug\GUI.csprojAssemblyReference.cache

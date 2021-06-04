@@ -49,6 +49,8 @@
             this.lblGia = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.txtGhiChu = new Guna.UI2.WinForms.Guna2TextBox();
+            this.rdNew = new System.Windows.Forms.RadioButton();
+            this.rdTV = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.lblHinhAnh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -212,7 +214,7 @@
             this.txtEmail.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txtEmail.IconLeftSize = new System.Drawing.Size(15, 15);
             this.txtEmail.Location = new System.Drawing.Point(210, 337);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(6);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderText = "Địa chỉ email";
@@ -240,7 +242,7 @@
             this.txtCMND.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txtCMND.IconLeftSize = new System.Drawing.Size(15, 15);
             this.txtCMND.Location = new System.Drawing.Point(210, 272);
-            this.txtCMND.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(6);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.PasswordChar = '\0';
             this.txtCMND.PlaceholderText = "Chứng minh nhân dân";
@@ -268,7 +270,7 @@
             this.txtSDT.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txtSDT.IconLeftSize = new System.Drawing.Size(15, 15);
             this.txtSDT.Location = new System.Drawing.Point(210, 205);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(6);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
             this.txtSDT.PlaceholderText = "Số điện thoại";
@@ -296,7 +298,7 @@
             this.txtHoTen.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txtHoTen.IconLeftSize = new System.Drawing.Size(15, 15);
             this.txtHoTen.Location = new System.Drawing.Point(210, 130);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(6);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.PasswordChar = '\0';
             this.txtHoTen.PlaceholderText = "Họ tên khách hàng";
@@ -377,7 +379,7 @@
             this.txtGhiChu.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txtGhiChu.IconLeftSize = new System.Drawing.Size(15, 15);
             this.txtGhiChu.Location = new System.Drawing.Point(210, 399);
-            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(6);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.PasswordChar = '\0';
             this.txtGhiChu.PlaceholderText = "Ghi Chú";
@@ -387,12 +389,41 @@
             this.txtGhiChu.TabIndex = 89;
             this.txtGhiChu.TextOffset = new System.Drawing.Point(5, 0);
             // 
+            // rdNew
+            // 
+            this.rdNew.AutoSize = true;
+            this.rdNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdNew.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rdNew.Location = new System.Drawing.Point(185, 102);
+            this.rdNew.Name = "rdNew";
+            this.rdNew.Size = new System.Drawing.Size(150, 22);
+            this.rdNew.TabIndex = 90;
+            this.rdNew.TabStop = true;
+            this.rdNew.Text = "Khach Hang moi";
+            this.rdNew.UseVisualStyleBackColor = true;
+            // 
+            // rdTV
+            // 
+            this.rdTV.AutoSize = true;
+            this.rdTV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdTV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rdTV.Location = new System.Drawing.Point(362, 101);
+            this.rdTV.Name = "rdTV";
+            this.rdTV.Size = new System.Drawing.Size(195, 22);
+            this.rdTV.TabIndex = 91;
+            this.rdTV.TabStop = true;
+            this.rdTV.Text = "Khanh hang thanh vien";
+            this.rdTV.UseVisualStyleBackColor = true;
+            this.rdTV.CheckedChanged += new System.EventHandler(this.rdTV_CheckedChanged);
+            // 
             // DatVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(730, 550);
+            this.Controls.Add(this.rdTV);
+            this.Controls.Add(this.rdNew);
             this.Controls.Add(this.txtGhiChu);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.lblGia);
@@ -445,5 +476,7 @@
         private System.Windows.Forms.Label lblGia;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox txtGhiChu;
+        private System.Windows.Forms.RadioButton rdNew;
+        private System.Windows.Forms.RadioButton rdTV;
     }
 }

@@ -28,4 +28,3 @@ C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flig
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\DLL_DAL\obj\Debug\DLL_DAL.csproj.CopyComplete
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\DLL_DAL\obj\Debug\DLL_DAL.dll
 C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\DLL_DAL\obj\Debug\DLL_DAL.pdb
-C:\Users\Long Nguyen\Desktop\UI Application\Projec_PhanMemThongMinh\Project_Flight\DLL_DAL\obj\Debug\DLL_DAL.csprojAssemblyReference.cache

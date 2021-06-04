@@ -29,7 +29,7 @@ namespace DLL_DAL.Model
 
         private float ThoiGianBay;
 
-        private float? DonGia;
+        private Double? DonGia;
         private String HangVe;
         private String TenMayBay;
         private String LoaiVe;
@@ -49,7 +49,7 @@ namespace DLL_DAL.Model
         public string thanhPhoDen { get => ThanhPhoDen; set => ThanhPhoDen = value; }
         public string codeSanDen { get => CodeSanDen; set => CodeSanDen = value; }
         public float thoiGianBay { get => ThoiGianBay; set => ThoiGianBay = value; }
-        public float? donGia { get => DonGia; set => DonGia = value; }
+        public Double? donGia { get => DonGia; set => DonGia = value; }
         public string hangVe { get => HangVe; set => HangVe = value; }
         public bool tinhTrang { get => TinhTrang; set => TinhTrang = value; }
         public string tenMayBay { get => TenMayBay; set => TenMayBay = value; }

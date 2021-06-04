@@ -16,5 +16,18 @@ namespace DLL_DAL
         {
         }
 
+        public Boolean checkKhachHang(List<KhachHangModel> listKH, String cmnd, Boolean check)
+        {
+            foreach(KhachHangModel item in listKH)
+            {
+                if(cmnd.Equals(item.cmnd))
+                {
+                    return check;
+                }
+            }
+
+            return !check;
+        }
+
     }
 }

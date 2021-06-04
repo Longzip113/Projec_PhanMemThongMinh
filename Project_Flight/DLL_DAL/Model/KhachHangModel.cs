@@ -14,7 +14,7 @@ namespace DLL_DAL.Model
         private String soDienThoai1;
         private String email1;
         private int soVeDaBan;
-        private float tongChiPhi;
+        private Double tongChiPhi;
 
         public long id { get => Id; set => Id = value; }
         public string hoTen { get => hoTen1; set => hoTen1 = value; }
@@ -22,6 +22,6 @@ namespace DLL_DAL.Model
         public string soDienThoai { get => soDienThoai1; set => soDienThoai1 = value; }
         public string email { get => email1; set => email1 = value; }
         public int SoVeDaBan { get => soVeDaBan; set => soVeDaBan = value; }
-        public float TongChiPhi { get => tongChiPhi; set => tongChiPhi = value; }
+        public Double TongChiPhi { get => tongChiPhi; set => tongChiPhi = value; }
     }
 }

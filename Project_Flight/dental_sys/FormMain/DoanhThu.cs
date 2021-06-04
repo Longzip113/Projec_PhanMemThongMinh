@@ -24,7 +24,7 @@ namespace dental_sys
 
         private void DoanhThu_Load(object sender, EventArgs e)
         {
-            float doanhThu = 0;
+            Double doanhThu = 0;
             int slVe = 0, slNV = 0;
 
             List<NhanVienModel> listNV = nhanVien.findAll();
@@ -35,7 +35,7 @@ namespace dental_sys
                 doanhThu += item.TongDoanhThu;
                 slVe += item.SoVeBan;
                 slNV++;
-                if(nhanVienTop.TongDoanhThu < item.TongDoanhThu)
+                if (nhanVienTop.TongDoanhThu < item.TongDoanhThu)
                 {
                     nhanVienTop = item;
                 }

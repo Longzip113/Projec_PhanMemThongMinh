@@ -13,10 +13,10 @@ namespace DLL_DAL
         {
         }
 
-        private float setVeKhachHang(ref int sl ,long id, List<PhieuDatVeModel> listPDV)
+        private Double setVeKhachHang(ref int sl ,long id, List<PhieuDatVeModel> listPDV)
         {
-            
-            float chiTieu = 0;
+
+            Double chiTieu = 0;
             KhachHangModel khachHang = new KhachHangModel();
             foreach (PhieuDatVeModel item in listPDV)
             {
@@ -38,7 +38,7 @@ namespace DLL_DAL
             foreach (KhachHangModel item in listKH)
             {
                 int sl = 0;
-                float chitieu = setVeKhachHang(ref sl ,item.id, listPDV);
+                Double chitieu = setVeKhachHang(ref sl ,item.id, listPDV);
                 item.SoVeDaBan = sl;
                 item.TongChiPhi = chitieu;
             }
