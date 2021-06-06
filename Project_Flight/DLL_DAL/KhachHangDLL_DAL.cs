@@ -44,5 +44,18 @@ namespace DLL_DAL
             }
             return listKH;
         }
+
+        public KhachHangModel findByid(List<KhachHangModel> listMB, string id)
+        {
+            foreach (KhachHangModel item in listMB)
+            {
+                if (item.id.Equals(id))
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
     }
 }

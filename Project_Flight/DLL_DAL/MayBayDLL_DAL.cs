@@ -12,7 +12,7 @@ namespace DLL_DAL
         public MayBayDLL_DAL(String url) : base(url)
         {
         }
-        public MayBayModel findMayBayByMA(List<MayBayModel> listMB, string id)
+        public MayBayModel findMayBayByid(List<MayBayModel> listMB, string id)
         {
             foreach (MayBayModel item in listMB)
             {
@@ -24,5 +24,8 @@ namespace DLL_DAL
 
             return null;
         }
+
+        
+
     }
 }
