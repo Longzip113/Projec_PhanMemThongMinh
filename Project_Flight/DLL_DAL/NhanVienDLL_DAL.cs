@@ -59,7 +59,18 @@ namespace DLL_DAL
             }
             return total;
         }
+        public NhanVienModel findByid(List<NhanVienModel> listNV, string id)
+        {
+            foreach (NhanVienModel item in listNV)
+            {
+                if (item.id.Equals(id))
+                {
+                    return item;
+                }
+            }
 
+            return null;
+        }
         public List<NhanVienModel> findAll()
         {
             List<NhanVienModel> nhanVienModels = GetModels();
